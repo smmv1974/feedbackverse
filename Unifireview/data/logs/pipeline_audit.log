@@ -1,0 +1,855 @@
+2025-11-13 23:35:25,676 - INFO - 
+2025-11-13 23:35:25,676 - INFO - ================================================================================
+2025-11-13 23:35:25,676 - INFO -  MULTI-PLATFORM REVIEW ANALYSIS PIPELINE
+2025-11-13 23:35:25,676 - INFO - ================================================================================
+2025-11-13 23:35:25,676 - INFO - ℹ️  Started at: 2025-11-13 23:35:25
+2025-11-13 23:35:25,676 - INFO - ℹ️  Config: config/config_alt.yaml
+2025-11-13 23:35:25,676 - INFO - 
+[STEP 1/9] Loading Configuration
+2025-11-13 23:35:25,676 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:35:25,676 - INFO - 📄 Loading configuration from: config\config_alt.yaml
+2025-11-13 23:35:25,679 - INFO - ✅ Configuration loaded successfully
+2025-11-13 23:35:25,679 - INFO - 📋 Configuration Summary:
+2025-11-13 23:35:25,679 - INFO -    - LLM Server: http://127.0.0.1:11434
+2025-11-13 23:35:25,679 - INFO -    - Timeout: 180s
+2025-11-13 23:35:25,679 - INFO -    - Batch Size: 5
+2025-11-13 23:35:25,679 - INFO -    - Models: {'summarization': {'name': 'qwen2.5:3b-instruct'}, 'sentiment': {'name': 'qwen2.5:3b-instruct'}, 'themes': {'name': 'qwen2.5:3b-instruct'}, 'alt_small': {'name': 'qwen2.5:3b-instruct'}}
+2025-11-13 23:35:25,679 - INFO - 
+[STEP 2/9] Preprocessing Reviews
+2025-11-13 23:35:25,679 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:35:25,679 - INFO - 🔧 Starting preprocessing pipeline...
+2025-11-13 23:35:25,679 - INFO -    - Loading raw CSVs
+2025-11-13 23:35:25,679 - INFO -    - Deduplicating reviews
+2025-11-13 23:35:25,679 - INFO -    - Normalizing ratings
+2025-11-13 23:35:25,679 - INFO -    - Filtering spam and non-English
+2025-11-13 23:35:25,684 - INFO - Loaded raw file data\raw\google.csv
+2025-11-13 23:35:25,686 - INFO - Loaded raw file data\raw\trustpilot.csv
+2025-11-13 23:35:25,688 - INFO - Loaded raw file data\raw\yelp.csv
+2025-11-13 23:35:31,368 - INFO - ✅ Preprocessing complete: 180 reviews ready for analysis
+2025-11-13 23:35:31,368 - INFO - 📊 Review Statistics:
+2025-11-13 23:35:31,368 - INFO -    - Total reviews: 180
+2025-11-13 23:35:31,368 - INFO -    - Platforms: 3
+2025-11-13 23:35:31,369 - INFO -    - Date range: 2024-10-10 to 2024-10-29
+2025-11-13 23:35:31,369 - INFO - 
+[STEP 3/9] Initializing Analysis Components
+2025-11-13 23:35:31,369 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:35:31,369 - INFO - 📦 Batch size: 5
+2025-11-13 23:35:31,369 - INFO - 🤖 Initializing LLM analyzer...
+2025-11-13 23:35:31,385 - INFO - ✅ LLM analyzer initialized
+2025-11-13 23:35:31,386 - INFO -    - Models: {'summarization': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct'}
+2025-11-13 23:35:31,386 - INFO -    - Base URL: http://127.0.0.1:11434
+2025-11-13 23:35:31,386 - INFO -    - Timeout: 180s
+2025-11-13 23:35:31,386 - INFO - 🔍 Initializing semantic grounder...
+2025-11-13 23:35:31,387 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-13 23:35:34,828 - INFO - ✅ Semantic grounder initialized (device: cpu)
+2025-11-13 23:35:34,828 - INFO - 📊 Initializing telemetry recorder...
+2025-11-13 23:35:34,828 - INFO - ✅ Telemetry recorder initialized
+2025-11-13 23:35:34,828 - INFO - 
+[STEP 4/9] Processing Review Batches
+2025-11-13 23:35:34,828 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:35:34,829 - INFO - 
+🏢 Processing platform 1/3: google
+2025-11-13 23:35:34,829 - INFO -    - Reviews: 60
+2025-11-13 23:35:34,832 - INFO - 📦 Split 60 records into 12 batches of size 5
+2025-11-13 23:35:34,833 - INFO - 
+   📦 Batch 1 (5 reviews)
+2025-11-13 23:35:34,833 - INFO -       Batch ID: google-batch-0
+2025-11-13 23:35:34,833 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:36:00,779 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:36:00,779 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:36:16,688 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:36:16,689 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:36:16,689 - INFO - ✅       Batch 1 analysis complete
+2025-11-13 23:36:16,689 - INFO -       📝 Summary length: 1646 chars
+2025-11-13 23:36:16,689 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:36:16,689 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:36:16,689 - INFO -       ⏱️  Elapsed time: 41.86s
+2025-11-13 23:36:16,689 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:36:16,689 - INFO -       📊 Telemetry recorded
+2025-11-13 23:36:16,689 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:36:16,970 - INFO -          - Strong: 1
+2025-11-13 23:36:16,971 - INFO -          - Medium: 5
+2025-11-13 23:36:16,971 - INFO -          - Weak: 12
+2025-11-13 23:36:16,971 - INFO - ✅       Grounding complete
+2025-11-13 23:36:16,971 - INFO - ✅    ✅ Batch 1 complete (total: 1 batches)
+2025-11-13 23:36:16,971 - INFO - 
+   📦 Batch 2 (5 reviews)
+2025-11-13 23:36:16,971 - INFO -       Batch ID: google-batch-1
+2025-11-13 23:36:16,971 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:36:40,997 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:36:40,997 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:36:57,758 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:36:57,758 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:36:57,758 - INFO - ✅       Batch 2 analysis complete
+2025-11-13 23:36:57,758 - INFO -       📝 Summary length: 1760 chars
+2025-11-13 23:36:57,758 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:36:57,758 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:36:57,758 - INFO -       ⏱️  Elapsed time: 40.79s
+2025-11-13 23:36:57,758 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:36:57,758 - INFO -       📊 Telemetry recorded
+2025-11-13 23:36:57,758 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:36:58,033 - INFO -          - Strong: 2
+2025-11-13 23:36:58,034 - INFO -          - Medium: 2
+2025-11-13 23:36:58,034 - INFO -          - Weak: 10
+2025-11-13 23:36:58,034 - INFO - ✅       Grounding complete
+2025-11-13 23:36:58,034 - INFO - ✅    ✅ Batch 2 complete (total: 2 batches)
+2025-11-13 23:36:58,034 - INFO - 
+   📦 Batch 3 (5 reviews)
+2025-11-13 23:36:58,034 - INFO -       Batch ID: google-batch-2
+2025-11-13 23:36:58,034 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:37:14,945 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:37:14,946 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:38:00,245 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:38:00,245 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:38:00,245 - INFO - ✅       Batch 3 analysis complete
+2025-11-13 23:38:00,245 - INFO -       📝 Summary length: 882 chars
+2025-11-13 23:38:00,245 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:38:00,245 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:38:00,245 - INFO -       ⏱️  Elapsed time: 62.21s
+2025-11-13 23:38:00,245 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:38:00,246 - INFO -       📊 Telemetry recorded
+2025-11-13 23:38:00,246 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:38:00,540 - INFO -          - Strong: 0
+2025-11-13 23:38:00,540 - INFO -          - Medium: 3
+2025-11-13 23:38:00,540 - INFO -          - Weak: 2
+2025-11-13 23:38:00,541 - INFO - ✅       Grounding complete
+2025-11-13 23:38:00,541 - INFO - ✅    ✅ Batch 3 complete (total: 3 batches)
+2025-11-13 23:38:00,541 - INFO - 
+   📦 Batch 4 (5 reviews)
+2025-11-13 23:38:00,541 - INFO -       Batch ID: google-batch-3
+2025-11-13 23:38:00,541 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:38:23,225 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:38:23,225 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:38:48,794 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:38:48,795 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:38:48,795 - INFO - ✅       Batch 4 analysis complete
+2025-11-13 23:38:48,795 - INFO -       📝 Summary length: 1119 chars
+2025-11-13 23:38:48,795 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:38:48,795 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:38:48,795 - INFO -       ⏱️  Elapsed time: 48.25s
+2025-11-13 23:38:48,795 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:38:48,795 - INFO -       📊 Telemetry recorded
+2025-11-13 23:38:48,795 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:38:49,158 - INFO -          - Strong: 3
+2025-11-13 23:38:49,158 - INFO -          - Medium: 2
+2025-11-13 23:38:49,159 - INFO -          - Weak: 3
+2025-11-13 23:38:49,159 - INFO - ✅       Grounding complete
+2025-11-13 23:38:49,159 - INFO - ✅    ✅ Batch 4 complete (total: 4 batches)
+2025-11-13 23:38:49,159 - INFO - 
+   📦 Batch 5 (5 reviews)
+2025-11-13 23:38:49,159 - INFO -       Batch ID: google-batch-4
+2025-11-13 23:38:49,159 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:39:19,265 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:39:19,265 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:39:43,377 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:39:43,377 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:39:43,377 - INFO - ✅       Batch 5 analysis complete
+2025-11-13 23:39:43,377 - INFO -       📝 Summary length: 1356 chars
+2025-11-13 23:39:43,377 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:39:43,377 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:39:43,377 - INFO -       ⏱️  Elapsed time: 54.22s
+2025-11-13 23:39:43,378 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:39:43,378 - INFO -       📊 Telemetry recorded
+2025-11-13 23:39:43,378 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:39:43,748 - INFO -          - Strong: 5
+2025-11-13 23:39:43,748 - INFO -          - Medium: 0
+2025-11-13 23:39:43,748 - INFO -          - Weak: 7
+2025-11-13 23:39:43,748 - INFO - ✅       Grounding complete
+2025-11-13 23:39:43,748 - INFO - ✅    ✅ Batch 5 complete (total: 5 batches)
+2025-11-13 23:39:43,748 - INFO - 
+   📦 Batch 6 (5 reviews)
+2025-11-13 23:39:43,749 - INFO -       Batch ID: google-batch-5
+2025-11-13 23:39:43,749 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:40:13,398 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:40:13,398 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:40:35,100 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:40:35,101 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:40:35,101 - INFO - ✅       Batch 6 analysis complete
+2025-11-13 23:40:35,101 - INFO -       📝 Summary length: 1009 chars
+2025-11-13 23:40:35,101 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:40:35,101 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:40:35,101 - INFO -       ⏱️  Elapsed time: 51.35s
+2025-11-13 23:40:35,101 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:40:35,101 - INFO -       📊 Telemetry recorded
+2025-11-13 23:40:35,102 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:40:35,461 - INFO -          - Strong: 2
+2025-11-13 23:40:35,461 - INFO -          - Medium: 2
+2025-11-13 23:40:35,462 - INFO -          - Weak: 2
+2025-11-13 23:40:35,462 - INFO - ✅       Grounding complete
+2025-11-13 23:40:35,462 - INFO - ✅    ✅ Batch 6 complete (total: 6 batches)
+2025-11-13 23:40:35,462 - INFO - 
+   📦 Batch 7 (5 reviews)
+2025-11-13 23:40:35,462 - INFO -       Batch ID: google-batch-6
+2025-11-13 23:40:35,462 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:41:02,697 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:41:02,697 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:41:44,482 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:41:44,482 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:41:44,482 - INFO - ✅       Batch 7 analysis complete
+2025-11-13 23:41:44,482 - INFO -       📝 Summary length: 1362 chars
+2025-11-13 23:41:44,482 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:41:44,482 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:41:44,482 - INFO -       ⏱️  Elapsed time: 69.02s
+2025-11-13 23:41:44,482 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:41:44,482 - INFO -       📊 Telemetry recorded
+2025-11-13 23:41:44,482 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:41:44,780 - INFO -          - Strong: 4
+2025-11-13 23:41:44,780 - INFO -          - Medium: 3
+2025-11-13 23:41:44,780 - INFO -          - Weak: 7
+2025-11-13 23:41:44,780 - INFO - ✅       Grounding complete
+2025-11-13 23:41:44,780 - INFO - ✅    ✅ Batch 7 complete (total: 7 batches)
+2025-11-13 23:41:44,780 - INFO - 
+   📦 Batch 8 (5 reviews)
+2025-11-13 23:41:44,780 - INFO -       Batch ID: google-batch-7
+2025-11-13 23:41:44,780 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:42:07,269 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:42:07,269 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:42:23,714 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:42:23,714 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:42:23,714 - INFO - ✅       Batch 8 analysis complete
+2025-11-13 23:42:23,714 - INFO -       📝 Summary length: 1384 chars
+2025-11-13 23:42:23,714 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:42:23,714 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:42:23,714 - INFO -       ⏱️  Elapsed time: 38.93s
+2025-11-13 23:42:23,714 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:42:23,714 - INFO -       📊 Telemetry recorded
+2025-11-13 23:42:23,714 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:42:23,998 - INFO -          - Strong: 2
+2025-11-13 23:42:23,999 - INFO -          - Medium: 4
+2025-11-13 23:42:23,999 - INFO -          - Weak: 5
+2025-11-13 23:42:23,999 - INFO - ✅       Grounding complete
+2025-11-13 23:42:23,999 - INFO - ✅    ✅ Batch 8 complete (total: 8 batches)
+2025-11-13 23:42:23,999 - INFO - 
+   📦 Batch 9 (5 reviews)
+2025-11-13 23:42:23,999 - INFO -       Batch ID: google-batch-8
+2025-11-13 23:42:23,999 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:42:37,801 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:42:37,801 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:42:53,800 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:42:53,800 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:42:53,800 - INFO - ✅       Batch 9 analysis complete
+2025-11-13 23:42:53,800 - INFO -       📝 Summary length: 888 chars
+2025-11-13 23:42:53,800 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:42:53,800 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:42:53,801 - INFO -       ⏱️  Elapsed time: 29.80s
+2025-11-13 23:42:53,801 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:42:53,801 - INFO -       📊 Telemetry recorded
+2025-11-13 23:42:53,801 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:42:54,102 - INFO -          - Strong: 0
+2025-11-13 23:42:54,102 - INFO -          - Medium: 2
+2025-11-13 23:42:54,102 - INFO -          - Weak: 5
+2025-11-13 23:42:54,102 - INFO - ✅       Grounding complete
+2025-11-13 23:42:54,102 - INFO - ✅    ✅ Batch 9 complete (total: 9 batches)
+2025-11-13 23:42:54,102 - INFO - 
+   📦 Batch 10 (5 reviews)
+2025-11-13 23:42:54,102 - INFO -       Batch ID: google-batch-9
+2025-11-13 23:42:54,102 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:43:07,361 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:43:07,361 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:43:26,456 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:43:26,456 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:43:26,456 - INFO - ✅       Batch 10 analysis complete
+2025-11-13 23:43:26,457 - INFO -       📝 Summary length: 850 chars
+2025-11-13 23:43:26,457 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:43:26,457 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:43:26,457 - INFO -       ⏱️  Elapsed time: 32.35s
+2025-11-13 23:43:26,457 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:43:26,457 - INFO -       📊 Telemetry recorded
+2025-11-13 23:43:26,457 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:43:26,714 - INFO -          - Strong: 1
+2025-11-13 23:43:26,714 - INFO -          - Medium: 2
+2025-11-13 23:43:26,714 - INFO -          - Weak: 3
+2025-11-13 23:43:26,714 - INFO - ✅       Grounding complete
+2025-11-13 23:43:26,714 - INFO - ✅    ✅ Batch 10 complete (total: 10 batches)
+2025-11-13 23:43:26,714 - INFO - 
+   📦 Batch 11 (5 reviews)
+2025-11-13 23:43:26,714 - INFO -       Batch ID: google-batch-10
+2025-11-13 23:43:26,714 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:43:50,232 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:43:50,232 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:44:09,637 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:44:09,637 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:44:09,637 - INFO - ✅       Batch 11 analysis complete
+2025-11-13 23:44:09,637 - INFO -       📝 Summary length: 1495 chars
+2025-11-13 23:44:09,637 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:44:09,638 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:44:09,638 - INFO -       ⏱️  Elapsed time: 42.92s
+2025-11-13 23:44:09,638 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:44:09,638 - INFO -       📊 Telemetry recorded
+2025-11-13 23:44:09,638 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:44:09,920 - INFO -          - Strong: 2
+2025-11-13 23:44:09,920 - INFO -          - Medium: 3
+2025-11-13 23:44:09,920 - INFO -          - Weak: 7
+2025-11-13 23:44:09,920 - INFO - ✅       Grounding complete
+2025-11-13 23:44:09,920 - INFO - ✅    ✅ Batch 11 complete (total: 11 batches)
+2025-11-13 23:44:09,920 - INFO - 
+   📦 Batch 12 (5 reviews)
+2025-11-13 23:44:09,920 - INFO -       Batch ID: google-batch-11
+2025-11-13 23:44:09,920 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:44:25,280 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:44:25,280 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:44:42,472 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:44:42,473 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:44:42,473 - INFO - ✅       Batch 12 analysis complete
+2025-11-13 23:44:42,473 - INFO -       📝 Summary length: 956 chars
+2025-11-13 23:44:42,473 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:44:42,473 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:44:42,473 - INFO -       ⏱️  Elapsed time: 32.55s
+2025-11-13 23:44:42,473 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:44:42,473 - INFO -       📊 Telemetry recorded
+2025-11-13 23:44:42,481 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:44:42,747 - INFO -          - Strong: 3
+2025-11-13 23:44:42,747 - INFO -          - Medium: 1
+2025-11-13 23:44:42,747 - INFO -          - Weak: 2
+2025-11-13 23:44:42,747 - INFO - ✅       Grounding complete
+2025-11-13 23:44:42,747 - INFO - ✅    ✅ Batch 12 complete (total: 12 batches)
+2025-11-13 23:44:42,782 - INFO - 
+🏢 Processing platform 2/3: trustpilot
+2025-11-13 23:44:42,782 - INFO -    - Reviews: 60
+2025-11-13 23:44:42,793 - INFO - 📦 Split 60 records into 12 batches of size 5
+2025-11-13 23:44:42,794 - INFO - 
+   📦 Batch 1 (5 reviews)
+2025-11-13 23:44:42,794 - INFO -       Batch ID: trustpilot-batch-0
+2025-11-13 23:44:42,794 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:44:55,440 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:44:55,440 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:45:12,890 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:45:12,890 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:45:12,890 - INFO - ✅       Batch 1 analysis complete
+2025-11-13 23:45:12,890 - INFO -       📝 Summary length: 825 chars
+2025-11-13 23:45:12,890 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:45:12,890 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:45:12,890 - INFO -       ⏱️  Elapsed time: 30.10s
+2025-11-13 23:45:12,890 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:45:12,890 - INFO -       📊 Telemetry recorded
+2025-11-13 23:45:12,890 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:45:13,138 - INFO -          - Strong: 3
+2025-11-13 23:45:13,138 - INFO -          - Medium: 2
+2025-11-13 23:45:13,138 - INFO -          - Weak: 3
+2025-11-13 23:45:13,138 - INFO - ✅       Grounding complete
+2025-11-13 23:45:13,138 - INFO - ✅    ✅ Batch 1 complete (total: 13 batches)
+2025-11-13 23:45:13,138 - INFO - 
+   📦 Batch 2 (5 reviews)
+2025-11-13 23:45:13,138 - INFO -       Batch ID: trustpilot-batch-1
+2025-11-13 23:45:13,138 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:45:25,105 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:45:25,105 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:45:41,946 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:45:41,946 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:45:41,946 - INFO - ✅       Batch 2 analysis complete
+2025-11-13 23:45:41,946 - INFO -       📝 Summary length: 726 chars
+2025-11-13 23:45:41,946 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:45:41,946 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:45:41,946 - INFO -       ⏱️  Elapsed time: 28.81s
+2025-11-13 23:45:41,946 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:45:41,946 - INFO -       📊 Telemetry recorded
+2025-11-13 23:45:41,946 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:45:42,202 - INFO -          - Strong: 1
+2025-11-13 23:45:42,203 - INFO -          - Medium: 3
+2025-11-13 23:45:42,203 - INFO -          - Weak: 1
+2025-11-13 23:45:42,203 - INFO - ✅       Grounding complete
+2025-11-13 23:45:42,203 - INFO - ✅    ✅ Batch 2 complete (total: 14 batches)
+2025-11-13 23:45:42,203 - INFO - 
+   📦 Batch 3 (5 reviews)
+2025-11-13 23:45:42,203 - INFO -       Batch ID: trustpilot-batch-2
+2025-11-13 23:45:42,203 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:46:14,021 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:46:14,021 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:46:32,529 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:46:32,531 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:46:32,531 - INFO - ✅       Batch 3 analysis complete
+2025-11-13 23:46:32,531 - INFO -       📝 Summary length: 1248 chars
+2025-11-13 23:46:32,531 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:46:32,531 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:46:32,532 - INFO -       ⏱️  Elapsed time: 50.33s
+2025-11-13 23:46:32,532 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:46:32,532 - INFO -       📊 Telemetry recorded
+2025-11-13 23:46:32,532 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:46:32,847 - INFO -          - Strong: 1
+2025-11-13 23:46:32,847 - INFO -          - Medium: 3
+2025-11-13 23:46:32,848 - INFO -          - Weak: 3
+2025-11-13 23:46:32,848 - INFO - ✅       Grounding complete
+2025-11-13 23:46:32,848 - INFO - ✅    ✅ Batch 3 complete (total: 15 batches)
+2025-11-13 23:46:32,848 - INFO - 
+   📦 Batch 4 (5 reviews)
+2025-11-13 23:46:32,848 - INFO -       Batch ID: trustpilot-batch-3
+2025-11-13 23:46:32,848 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:47:09,546 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:47:09,546 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:47:28,466 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:47:28,466 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:47:28,466 - INFO - ✅       Batch 4 analysis complete
+2025-11-13 23:47:28,466 - INFO -       📝 Summary length: 1698 chars
+2025-11-13 23:47:28,466 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:47:28,466 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:47:28,466 - INFO -       ⏱️  Elapsed time: 55.62s
+2025-11-13 23:47:28,466 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:47:28,466 - INFO -       📊 Telemetry recorded
+2025-11-13 23:47:28,466 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:47:28,782 - INFO -          - Strong: 3
+2025-11-13 23:47:28,782 - INFO -          - Medium: 4
+2025-11-13 23:47:28,782 - INFO -          - Weak: 6
+2025-11-13 23:47:28,783 - INFO - ✅       Grounding complete
+2025-11-13 23:47:28,783 - INFO - ✅    ✅ Batch 4 complete (total: 16 batches)
+2025-11-13 23:47:28,783 - INFO - 
+   📦 Batch 5 (5 reviews)
+2025-11-13 23:47:28,783 - INFO -       Batch ID: trustpilot-batch-4
+2025-11-13 23:47:28,783 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:47:41,850 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:47:41,850 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:47:59,685 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:47:59,685 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:47:59,685 - INFO - ✅       Batch 5 analysis complete
+2025-11-13 23:47:59,685 - INFO -       📝 Summary length: 776 chars
+2025-11-13 23:47:59,685 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:47:59,685 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:47:59,685 - INFO -       ⏱️  Elapsed time: 30.90s
+2025-11-13 23:47:59,686 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:47:59,686 - INFO -       📊 Telemetry recorded
+2025-11-13 23:47:59,686 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:47:59,920 - INFO -          - Strong: 1
+2025-11-13 23:47:59,920 - INFO -          - Medium: 1
+2025-11-13 23:47:59,920 - INFO -          - Weak: 3
+2025-11-13 23:47:59,920 - INFO - ✅       Grounding complete
+2025-11-13 23:47:59,921 - INFO - ✅    ✅ Batch 5 complete (total: 17 batches)
+2025-11-13 23:47:59,921 - INFO - 
+   📦 Batch 6 (5 reviews)
+2025-11-13 23:47:59,921 - INFO -       Batch ID: trustpilot-batch-5
+2025-11-13 23:47:59,921 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:48:19,146 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:48:19,147 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:48:38,198 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:48:38,198 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:48:38,198 - INFO - ✅       Batch 6 analysis complete
+2025-11-13 23:48:38,198 - INFO -       📝 Summary length: 1261 chars
+2025-11-13 23:48:38,198 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:48:38,198 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:48:38,198 - INFO -       ⏱️  Elapsed time: 38.28s
+2025-11-13 23:48:38,198 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:48:38,198 - INFO -       📊 Telemetry recorded
+2025-11-13 23:48:38,198 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:48:38,471 - INFO -          - Strong: 3
+2025-11-13 23:48:38,471 - INFO -          - Medium: 2
+2025-11-13 23:48:38,471 - INFO -          - Weak: 9
+2025-11-13 23:48:38,471 - INFO - ✅       Grounding complete
+2025-11-13 23:48:38,471 - INFO - ✅    ✅ Batch 6 complete (total: 18 batches)
+2025-11-13 23:48:38,471 - INFO - 
+   📦 Batch 7 (5 reviews)
+2025-11-13 23:48:38,471 - INFO -       Batch ID: trustpilot-batch-6
+2025-11-13 23:48:38,471 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:48:51,507 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:48:51,507 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:49:07,890 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:49:07,899 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:49:07,899 - INFO - ✅       Batch 7 analysis complete
+2025-11-13 23:49:07,899 - INFO -       📝 Summary length: 839 chars
+2025-11-13 23:49:07,899 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:49:07,899 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:49:07,899 - INFO -       ⏱️  Elapsed time: 29.43s
+2025-11-13 23:49:07,899 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:49:07,899 - INFO -       📊 Telemetry recorded
+2025-11-13 23:49:07,899 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:49:08,151 - INFO -          - Strong: 3
+2025-11-13 23:49:08,151 - INFO -          - Medium: 2
+2025-11-13 23:49:08,151 - INFO -          - Weak: 2
+2025-11-13 23:49:08,151 - INFO - ✅       Grounding complete
+2025-11-13 23:49:08,151 - INFO - ✅    ✅ Batch 7 complete (total: 19 batches)
+2025-11-13 23:49:08,151 - INFO - 
+   📦 Batch 8 (5 reviews)
+2025-11-13 23:49:08,151 - INFO -       Batch ID: trustpilot-batch-7
+2025-11-13 23:49:08,151 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:49:22,128 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:49:22,128 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:49:38,138 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:49:38,139 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:49:38,139 - INFO - ✅       Batch 8 analysis complete
+2025-11-13 23:49:38,139 - INFO -       📝 Summary length: 889 chars
+2025-11-13 23:49:38,139 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:49:38,139 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:49:38,139 - INFO -       ⏱️  Elapsed time: 29.99s
+2025-11-13 23:49:38,139 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:49:38,139 - INFO -       📊 Telemetry recorded
+2025-11-13 23:49:38,139 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:49:38,388 - INFO -          - Strong: 1
+2025-11-13 23:49:38,388 - INFO -          - Medium: 4
+2025-11-13 23:49:38,388 - INFO -          - Weak: 1
+2025-11-13 23:49:38,388 - INFO - ✅       Grounding complete
+2025-11-13 23:49:38,388 - INFO - ✅    ✅ Batch 8 complete (total: 20 batches)
+2025-11-13 23:49:38,388 - INFO - 
+   📦 Batch 9 (5 reviews)
+2025-11-13 23:49:38,388 - INFO -       Batch ID: trustpilot-batch-8
+2025-11-13 23:49:38,388 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:49:57,308 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:49:57,309 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:50:14,800 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:50:14,800 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:50:14,800 - INFO - ✅       Batch 9 analysis complete
+2025-11-13 23:50:14,800 - INFO -       📝 Summary length: 1192 chars
+2025-11-13 23:50:14,800 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:50:14,800 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:50:14,800 - INFO -       ⏱️  Elapsed time: 36.41s
+2025-11-13 23:50:14,800 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:50:14,800 - INFO -       📊 Telemetry recorded
+2025-11-13 23:50:14,800 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:50:15,069 - INFO -          - Strong: 3
+2025-11-13 23:50:15,069 - INFO -          - Medium: 2
+2025-11-13 23:50:15,069 - INFO -          - Weak: 6
+2025-11-13 23:50:15,069 - INFO - ✅       Grounding complete
+2025-11-13 23:50:15,069 - INFO - ✅    ✅ Batch 9 complete (total: 21 batches)
+2025-11-13 23:50:15,069 - INFO - 
+   📦 Batch 10 (5 reviews)
+2025-11-13 23:50:15,069 - INFO -       Batch ID: trustpilot-batch-9
+2025-11-13 23:50:15,069 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:50:29,224 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:50:29,224 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:50:47,876 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:50:47,876 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:50:47,876 - INFO - ✅       Batch 10 analysis complete
+2025-11-13 23:50:47,876 - INFO -       📝 Summary length: 818 chars
+2025-11-13 23:50:47,876 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:50:47,877 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:50:47,877 - INFO -       ⏱️  Elapsed time: 32.81s
+2025-11-13 23:50:47,877 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:50:47,877 - INFO -       📊 Telemetry recorded
+2025-11-13 23:50:47,877 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:50:48,120 - INFO -          - Strong: 1
+2025-11-13 23:50:48,120 - INFO -          - Medium: 1
+2025-11-13 23:50:48,121 - INFO -          - Weak: 3
+2025-11-13 23:50:48,121 - INFO - ✅       Grounding complete
+2025-11-13 23:50:48,121 - INFO - ✅    ✅ Batch 10 complete (total: 22 batches)
+2025-11-13 23:50:48,121 - INFO - 
+   📦 Batch 11 (5 reviews)
+2025-11-13 23:50:48,121 - INFO -       Batch ID: trustpilot-batch-10
+2025-11-13 23:50:48,121 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:51:13,843 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:51:13,843 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:51:29,978 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:51:29,978 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:51:29,978 - INFO - ✅       Batch 11 analysis complete
+2025-11-13 23:51:29,978 - INFO -       📝 Summary length: 1784 chars
+2025-11-13 23:51:29,979 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:51:29,979 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:51:29,979 - INFO -       ⏱️  Elapsed time: 41.86s
+2025-11-13 23:51:29,979 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:51:29,979 - INFO -       📊 Telemetry recorded
+2025-11-13 23:51:29,979 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:51:30,279 - INFO -          - Strong: 1
+2025-11-13 23:51:30,279 - INFO -          - Medium: 6
+2025-11-13 23:51:30,279 - INFO -          - Weak: 6
+2025-11-13 23:51:30,280 - INFO - ✅       Grounding complete
+2025-11-13 23:51:30,280 - INFO - ✅    ✅ Batch 11 complete (total: 23 batches)
+2025-11-13 23:51:30,280 - INFO - 
+   📦 Batch 12 (5 reviews)
+2025-11-13 23:51:30,280 - INFO -       Batch ID: trustpilot-batch-11
+2025-11-13 23:51:30,280 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:51:45,138 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:51:45,138 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:52:04,851 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:52:04,851 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:52:04,852 - INFO - ✅       Batch 12 analysis complete
+2025-11-13 23:52:04,852 - INFO -       📝 Summary length: 932 chars
+2025-11-13 23:52:04,852 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:52:04,852 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:52:04,852 - INFO -       ⏱️  Elapsed time: 34.57s
+2025-11-13 23:52:04,852 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:52:04,852 - INFO -       📊 Telemetry recorded
+2025-11-13 23:52:04,852 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:52:05,128 - INFO -          - Strong: 1
+2025-11-13 23:52:05,128 - INFO -          - Medium: 2
+2025-11-13 23:52:05,128 - INFO -          - Weak: 3
+2025-11-13 23:52:05,128 - INFO - ✅       Grounding complete
+2025-11-13 23:52:05,128 - INFO - ✅    ✅ Batch 12 complete (total: 24 batches)
+2025-11-13 23:52:05,129 - INFO - 
+🏢 Processing platform 3/3: yelp
+2025-11-13 23:52:05,130 - INFO -    - Reviews: 60
+2025-11-13 23:52:05,134 - INFO - 📦 Split 60 records into 12 batches of size 5
+2025-11-13 23:52:05,134 - INFO - 
+   📦 Batch 1 (5 reviews)
+2025-11-13 23:52:05,134 - INFO -       Batch ID: yelp-batch-0
+2025-11-13 23:52:05,135 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:52:27,289 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:52:27,289 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:52:45,157 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:52:45,158 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:52:45,158 - INFO - ✅       Batch 1 analysis complete
+2025-11-13 23:52:45,158 - INFO -       📝 Summary length: 1464 chars
+2025-11-13 23:52:45,158 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:52:45,158 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:52:45,158 - INFO -       ⏱️  Elapsed time: 40.02s
+2025-11-13 23:52:45,158 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:52:45,158 - INFO -       📊 Telemetry recorded
+2025-11-13 23:52:45,158 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:52:45,507 - INFO -          - Strong: 0
+2025-11-13 23:52:45,507 - INFO -          - Medium: 4
+2025-11-13 23:52:45,507 - INFO -          - Weak: 8
+2025-11-13 23:52:45,507 - INFO - ✅       Grounding complete
+2025-11-13 23:52:45,507 - INFO - ✅    ✅ Batch 1 complete (total: 25 batches)
+2025-11-13 23:52:45,507 - INFO - 
+   📦 Batch 2 (5 reviews)
+2025-11-13 23:52:45,508 - INFO -       Batch ID: yelp-batch-1
+2025-11-13 23:52:45,508 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:53:01,651 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:53:01,651 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:53:18,504 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:53:18,504 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:53:18,504 - INFO - ✅       Batch 2 analysis complete
+2025-11-13 23:53:18,504 - INFO -       📝 Summary length: 1031 chars
+2025-11-13 23:53:18,504 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:53:18,505 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:53:18,505 - INFO -       ⏱️  Elapsed time: 33.00s
+2025-11-13 23:53:18,505 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:53:18,505 - INFO -       📊 Telemetry recorded
+2025-11-13 23:53:18,505 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:53:18,801 - INFO -          - Strong: 1
+2025-11-13 23:53:18,801 - INFO -          - Medium: 3
+2025-11-13 23:53:18,801 - INFO -          - Weak: 3
+2025-11-13 23:53:18,801 - INFO - ✅       Grounding complete
+2025-11-13 23:53:18,801 - INFO - ✅    ✅ Batch 2 complete (total: 26 batches)
+2025-11-13 23:53:18,801 - INFO - 
+   📦 Batch 3 (5 reviews)
+2025-11-13 23:53:18,801 - INFO -       Batch ID: yelp-batch-2
+2025-11-13 23:53:18,801 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:53:41,265 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:53:41,265 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:53:57,261 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:53:57,262 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:53:57,262 - INFO - ✅       Batch 3 analysis complete
+2025-11-13 23:53:57,262 - INFO -       📝 Summary length: 1421 chars
+2025-11-13 23:53:57,262 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:53:57,262 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:53:57,262 - INFO -       ⏱️  Elapsed time: 38.46s
+2025-11-13 23:53:57,262 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:53:57,263 - INFO -       📊 Telemetry recorded
+2025-11-13 23:53:57,263 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:53:57,591 - INFO -          - Strong: 2
+2025-11-13 23:53:57,591 - INFO -          - Medium: 1
+2025-11-13 23:53:57,591 - INFO -          - Weak: 10
+2025-11-13 23:53:57,591 - INFO - ✅       Grounding complete
+2025-11-13 23:53:57,591 - INFO - ✅    ✅ Batch 3 complete (total: 27 batches)
+2025-11-13 23:53:57,591 - INFO - 
+   📦 Batch 4 (5 reviews)
+2025-11-13 23:53:57,591 - INFO -       Batch ID: yelp-batch-3
+2025-11-13 23:53:57,591 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:54:12,776 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:54:12,776 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:54:30,346 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:54:30,346 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:54:30,346 - INFO - ✅       Batch 4 analysis complete
+2025-11-13 23:54:30,346 - INFO -       📝 Summary length: 967 chars
+2025-11-13 23:54:30,346 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:54:30,346 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:54:30,346 - INFO -       ⏱️  Elapsed time: 32.76s
+2025-11-13 23:54:30,346 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:54:30,346 - INFO -       📊 Telemetry recorded
+2025-11-13 23:54:30,346 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:54:30,618 - INFO -          - Strong: 2
+2025-11-13 23:54:30,618 - INFO -          - Medium: 3
+2025-11-13 23:54:30,618 - INFO -          - Weak: 0
+2025-11-13 23:54:30,618 - INFO - ✅       Grounding complete
+2025-11-13 23:54:30,618 - INFO - ✅    ✅ Batch 4 complete (total: 28 batches)
+2025-11-13 23:54:30,618 - INFO - 
+   📦 Batch 5 (5 reviews)
+2025-11-13 23:54:30,618 - INFO -       Batch ID: yelp-batch-4
+2025-11-13 23:54:30,618 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:54:53,688 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:54:53,688 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:55:13,529 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:55:13,529 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:55:13,529 - INFO - ✅       Batch 5 analysis complete
+2025-11-13 23:55:13,529 - INFO -       📝 Summary length: 1513 chars
+2025-11-13 23:55:13,529 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:55:13,530 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:55:13,530 - INFO -       ⏱️  Elapsed time: 42.91s
+2025-11-13 23:55:13,530 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:55:13,530 - INFO -       📊 Telemetry recorded
+2025-11-13 23:55:13,530 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:55:13,852 - INFO -          - Strong: 2
+2025-11-13 23:55:13,852 - INFO -          - Medium: 5
+2025-11-13 23:55:13,852 - INFO -          - Weak: 9
+2025-11-13 23:55:13,852 - INFO - ✅       Grounding complete
+2025-11-13 23:55:13,852 - INFO - ✅    ✅ Batch 5 complete (total: 29 batches)
+2025-11-13 23:55:13,852 - INFO - 
+   📦 Batch 6 (5 reviews)
+2025-11-13 23:55:13,852 - INFO -       Batch ID: yelp-batch-5
+2025-11-13 23:55:13,852 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:55:37,032 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:55:37,032 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:55:55,018 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:55:55,018 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:55:55,018 - INFO - ✅       Batch 6 analysis complete
+2025-11-13 23:55:55,018 - INFO -       📝 Summary length: 1509 chars
+2025-11-13 23:55:55,018 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:55:55,018 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:55:55,018 - INFO -       ⏱️  Elapsed time: 41.17s
+2025-11-13 23:55:55,019 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:55:55,019 - INFO -       📊 Telemetry recorded
+2025-11-13 23:55:55,019 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:55:55,337 - INFO -          - Strong: 0
+2025-11-13 23:55:55,337 - INFO -          - Medium: 3
+2025-11-13 23:55:55,337 - INFO -          - Weak: 10
+2025-11-13 23:55:55,337 - INFO - ✅       Grounding complete
+2025-11-13 23:55:55,337 - INFO - ✅    ✅ Batch 6 complete (total: 30 batches)
+2025-11-13 23:55:55,337 - INFO - 
+   📦 Batch 7 (5 reviews)
+2025-11-13 23:55:55,337 - INFO -       Batch ID: yelp-batch-6
+2025-11-13 23:55:55,338 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:56:11,000 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:56:11,000 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:56:27,495 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:56:27,495 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:56:27,495 - INFO - ✅       Batch 7 analysis complete
+2025-11-13 23:56:27,496 - INFO -       📝 Summary length: 988 chars
+2025-11-13 23:56:27,496 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:56:27,496 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:56:27,496 - INFO -       ⏱️  Elapsed time: 32.16s
+2025-11-13 23:56:27,496 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:56:27,496 - INFO -       📊 Telemetry recorded
+2025-11-13 23:56:27,496 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:56:27,769 - INFO -          - Strong: 1
+2025-11-13 23:56:27,769 - INFO -          - Medium: 1
+2025-11-13 23:56:27,769 - INFO -          - Weak: 3
+2025-11-13 23:56:27,769 - INFO - ✅       Grounding complete
+2025-11-13 23:56:27,769 - INFO - ✅    ✅ Batch 7 complete (total: 31 batches)
+2025-11-13 23:56:27,769 - INFO - 
+   📦 Batch 8 (5 reviews)
+2025-11-13 23:56:27,769 - INFO -       Batch ID: yelp-batch-7
+2025-11-13 23:56:27,769 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:56:54,019 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:56:54,019 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:57:13,563 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:57:13,563 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:57:13,563 - INFO - ✅       Batch 8 analysis complete
+2025-11-13 23:57:13,563 - INFO -       📝 Summary length: 1719 chars
+2025-11-13 23:57:13,563 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:57:13,563 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:57:13,563 - INFO -       ⏱️  Elapsed time: 45.79s
+2025-11-13 23:57:13,563 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:57:13,563 - INFO -       📊 Telemetry recorded
+2025-11-13 23:57:13,563 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:57:13,882 - INFO -          - Strong: 1
+2025-11-13 23:57:13,882 - INFO -          - Medium: 5
+2025-11-13 23:57:13,882 - INFO -          - Weak: 10
+2025-11-13 23:57:13,882 - INFO - ✅       Grounding complete
+2025-11-13 23:57:13,882 - INFO - ✅    ✅ Batch 8 complete (total: 32 batches)
+2025-11-13 23:57:13,882 - INFO - 
+   📦 Batch 9 (5 reviews)
+2025-11-13 23:57:13,882 - INFO -       Batch ID: yelp-batch-8
+2025-11-13 23:57:13,882 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:57:27,526 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:57:27,526 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:57:44,135 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:57:44,135 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:57:44,135 - INFO - ✅       Batch 9 analysis complete
+2025-11-13 23:57:44,135 - INFO -       📝 Summary length: 834 chars
+2025-11-13 23:57:44,135 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:57:44,135 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:57:44,135 - INFO -       ⏱️  Elapsed time: 30.25s
+2025-11-13 23:57:44,135 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:57:44,135 - INFO -       📊 Telemetry recorded
+2025-11-13 23:57:44,135 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:57:44,417 - INFO -          - Strong: 0
+2025-11-13 23:57:44,418 - INFO -          - Medium: 3
+2025-11-13 23:57:44,418 - INFO -          - Weak: 1
+2025-11-13 23:57:44,418 - INFO - ✅       Grounding complete
+2025-11-13 23:57:44,418 - INFO - ✅    ✅ Batch 9 complete (total: 33 batches)
+2025-11-13 23:57:44,418 - INFO - 
+   📦 Batch 10 (5 reviews)
+2025-11-13 23:57:44,418 - INFO -       Batch ID: yelp-batch-9
+2025-11-13 23:57:44,418 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:57:57,784 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:57:57,784 - INFO - ✅ Successfully parsed 4 theme(s) from model response
+2025-11-13 23:58:15,242 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:58:15,242 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:58:15,243 - INFO - ✅       Batch 10 analysis complete
+2025-11-13 23:58:15,243 - INFO -       📝 Summary length: 846 chars
+2025-11-13 23:58:15,243 - INFO -       🎨 Themes extracted: 4
+2025-11-13 23:58:15,243 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:58:15,243 - INFO -       ⏱️  Elapsed time: 30.82s
+2025-11-13 23:58:15,243 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:58:15,243 - INFO -       📊 Telemetry recorded
+2025-11-13 23:58:15,243 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:58:15,513 - INFO -          - Strong: 1
+2025-11-13 23:58:15,513 - INFO -          - Medium: 2
+2025-11-13 23:58:15,513 - INFO -          - Weak: 3
+2025-11-13 23:58:15,513 - INFO - ✅       Grounding complete
+2025-11-13 23:58:15,513 - INFO - ✅    ✅ Batch 10 complete (total: 34 batches)
+2025-11-13 23:58:15,513 - INFO - 
+   📦 Batch 11 (5 reviews)
+2025-11-13 23:58:15,513 - INFO -       Batch ID: yelp-batch-10
+2025-11-13 23:58:15,513 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:58:43,171 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:58:43,172 - INFO - ✅ Successfully parsed 4 theme(s) from model response
+2025-11-13 23:59:02,371 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:59:02,371 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:59:02,371 - INFO - ✅       Batch 11 analysis complete
+2025-11-13 23:59:02,371 - INFO -       📝 Summary length: 1579 chars
+2025-11-13 23:59:02,371 - INFO -       🎨 Themes extracted: 4
+2025-11-13 23:59:02,371 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:59:02,371 - INFO -       ⏱️  Elapsed time: 46.86s
+2025-11-13 23:59:02,371 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:59:02,371 - INFO -       📊 Telemetry recorded
+2025-11-13 23:59:02,371 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:59:02,689 - INFO -          - Strong: 3
+2025-11-13 23:59:02,689 - INFO -          - Medium: 3
+2025-11-13 23:59:02,689 - INFO -          - Weak: 5
+2025-11-13 23:59:02,689 - INFO - ✅       Grounding complete
+2025-11-13 23:59:02,689 - INFO - ✅    ✅ Batch 11 complete (total: 35 batches)
+2025-11-13 23:59:02,689 - INFO - 
+   📦 Batch 12 (5 reviews)
+2025-11-13 23:59:02,689 - INFO -       Batch ID: yelp-batch-11
+2025-11-13 23:59:02,689 - INFO -       ⏱️  Started batch analysis...
+2025-11-13 23:59:18,610 - INFO - 📝 Attempting to parse themes JSON response...
+2025-11-13 23:59:18,610 - INFO - ✅ Successfully parsed 5 theme(s) from model response
+2025-11-13 23:59:36,355 - INFO - 📝 Attempting to parse sentiment JSON response...
+2025-11-13 23:59:36,356 - INFO - ✅ Successfully parsed 5 sentiment(s) from model response
+2025-11-13 23:59:36,356 - INFO - ✅       Batch 12 analysis complete
+2025-11-13 23:59:36,356 - INFO -       📝 Summary length: 1003 chars
+2025-11-13 23:59:36,356 - INFO -       🎨 Themes extracted: 5
+2025-11-13 23:59:36,356 - INFO -       😊 Sentiments analyzed: 5
+2025-11-13 23:59:36,356 - INFO -       ⏱️  Elapsed time: 33.67s
+2025-11-13 23:59:36,356 - INFO -       🤖 Models used: {'summarization': 'qwen2.5:3b-instruct', 'themes': 'qwen2.5:3b-instruct', 'sentiment': 'qwen2.5:3b-instruct'}
+2025-11-13 23:59:36,356 - INFO -       📊 Telemetry recorded
+2025-11-13 23:59:36,356 - INFO -       🔍 Performing semantic grounding...
+2025-11-13 23:59:36,623 - INFO -          - Strong: 2
+2025-11-13 23:59:36,623 - INFO -          - Medium: 2
+2025-11-13 23:59:36,623 - INFO -          - Weak: 3
+2025-11-13 23:59:36,623 - INFO - ✅       Grounding complete
+2025-11-13 23:59:36,623 - INFO - ✅    ✅ Batch 12 complete (total: 36 batches)
+2025-11-13 23:59:36,636 - INFO - 
+[STEP 6/9] Finalizing Telemetry
+2025-11-13 23:59:36,637 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:59:36,637 - INFO - ⏱️  Total elapsed time: 0.4030 hours (24.18 minutes)
+2025-11-13 23:59:36,648 - INFO - ✅ Telemetry finalized
+2025-11-13 23:59:36,648 - INFO - 
+[STEP 7/9] Computing Weekly Sentiment Drift
+2025-11-13 23:59:36,648 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:59:36,648 - INFO - 📊 Analyzing 180 sentiment records...
+2025-11-13 23:59:36,785 - INFO - ✅ Weekly sentiment analysis complete
+2025-11-13 23:59:36,785 - INFO - 
+[STEP 8/9] Generating Output Files
+2025-11-13 23:59:36,785 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:59:36,785 - INFO - 💾 Writing results to: data\results\analysis_results.json
+2025-11-13 23:59:36,794 - INFO - ✅ Results saved to: data\results\analysis_results.json
+2025-11-13 23:59:36,794 - INFO - 
+[STEP 9/9] Pipeline Summary
+2025-11-13 23:59:36,794 - INFO - --------------------------------------------------------------------------------
+2025-11-13 23:59:36,794 - INFO - 📊 FINAL STATISTICS:
+2025-11-13 23:59:36,794 - INFO -    - Total reviews processed: 180
+2025-11-13 23:59:36,794 - INFO -    - Total batches: 36
+2025-11-13 23:59:36,794 - INFO -    - Platforms: 3
+2025-11-13 23:59:36,794 - INFO -    - Sentiments analyzed: 180
+2025-11-13 23:59:36,794 - INFO -    - Elapsed time: 24.18 minutes
+2025-11-13 23:59:36,794 - INFO -    - Avg time per review: 8.06s
+2025-11-13 23:59:36,794 - INFO - 
+📁 OUTPUT FILES:
+2025-11-13 23:59:36,795 - INFO -    - Analysis results: data\results\analysis_results.json
+2025-11-13 23:59:36,795 - INFO -    - Cleaned reviews: data/processed/reviews_clean.csv
+2025-11-13 23:59:36,795 - INFO -    - Weekly sentiment: data/results/weekly_sentiment.csv
+2025-11-13 23:59:36,795 - INFO -    - Telemetry: data/results/telemetry.json
+2025-11-13 23:59:36,795 - INFO -    - Descriptive stats: data/results/descriptive.json
+2025-11-13 23:59:36,795 - INFO -    - Audit log: data/logs/pipeline_audit.log
+2025-11-13 23:59:36,795 - INFO - 
+2025-11-13 23:59:36,795 - INFO - ================================================================================
+2025-11-13 23:59:36,795 - INFO -  PIPELINE COMPLETE
+2025-11-13 23:59:36,795 - INFO - ================================================================================
+2025-11-13 23:59:36,795 - INFO - ✅ Pipeline completed successfully in 24.18 minutes!

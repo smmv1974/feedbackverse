@@ -1,0 +1,5 @@
+data-folder.zip
+.venv_unifireview/
+__pycache__/
+*.pyc
+Unifireview/data/raw/

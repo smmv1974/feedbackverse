@@ -1,0 +1,19 @@
+{
+  "raw_n": 180,
+  "n": 180,
+  "kept_pct": 100.0,
+  "median_rating": 3.0,
+  "pct_5": 22.78,
+  "pct_4": 22.22,
+  "mean_word_count": 128.61,
+  "domain_counts": {
+    "services": 60,
+    "hospitality": 60,
+    "electronics": 60
+  },
+  "platform_split": {
+    "google": 60,
+    "yelp": 60,
+    "trustpilot": 60
+  }
+}

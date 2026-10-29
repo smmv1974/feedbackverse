@@ -1,0 +1,136 @@
+# OLLAMA CLOUD CONFIGURATION
+# Uses Ollama's cloud-hosted large models (no local GPU/RAM needed)
+#
+# SETUP:
+# 1. Sign in: ollama signin
+# 2. Get API key: https://ollama.com/settings/keys
+# 3. Set key: $env:OLLAMA_API_KEY="your-key-here"
+# 4. Install: pip install ollama
+# 5. Run: python run_pipeline.py --config config/config_ollama_cloud.yaml
+
+llm:
+  # Ollama Cloud configuration
+  ollama_cloud:
+    enabled: true
+    host: "https://ollama.com"
+    api_key_env: "4480e97dfa8b4019a3b4d3bc05dd5069.BSJ76CeqzrdFetKbcJ2oipul"
+
+    # Model assignment (choose from available cloud models)
+    # Available: gpt-oss:120b-cloud, gpt-oss:20b-cloud, deepseek-v3.1:671b-cloud,
+    #            kimi-k2:1t-cloud, qwen3-coder:480b-cloud, qwen3-vl:235b-cloud
+    summarization: "gpt-oss:20b-cloud"   # 20B params - good for summaries
+    sentiment: "gpt-oss:20b-cloud"       # 20B params - critical task
+    themes: "gpt-oss:120b-cloud"         # 120B params - complex theme extraction
+
+    # Timeout settings
+    timeout: 120  # Cloud models may take longer
+    max_retries: 3
+
+    # Calibration settings (fixes Kappa issue - range compression)
+    # Stretches extreme values toward -1 and +1 for better categorical agreement
+    calibration_enabled: true
+    calibration_power: 0.75  # 0.75 = optimal after testing 0.65, 0.70, 0.75
+
+  # Fallback to Groq if Ollama Cloud fails
+  cloud:
+    enabled: true
+    fallback_1:
+      provider: "groq"
+      model: "meta-llama/llama-4-scout-17b-16e-instruct"
+      api_key_env: "GROQ_API_KEY"
+      timeout: 60
+      max_retries: 3
+
+  # Generation parameters
+  generation:
+    temperature: 0.1  # Low for consistency
+    top_p: 0.95
+    repeat_penalty: 1.1
+    tokens:
+      summary_max: 500
+      themes_max: 350
+
+# Pipeline configuration
+# Optimized for 200-300 reviews with Ollama Cloud
+pipeline:
+  batch_size: 3  # 3 reviews per batch
+  max_retries: 3
+  delay_between_batches: 2  # 2 seconds between batches
+  delay_between_requests: 0.5  # 0.5s between requests
+
+  # Save progress
+  save_intermediate: true
+  checkpoint_frequency: 20  # Save every 20 batches (~60 reviews)
+
+# Data configuration
+data:
+  collection_window:
+    start: "2024-09-10"
+    end: "2024-11-01"
+
+  # Validation dataset
+  validation:
+    file: "data/validation/references_aligned.csv"
+    sample_size: 300  # User requested 200-300 reviews per run
+
+# Grounding
+grounding:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  thresholds:
+    flag: 0.50
+    strong: 0.70
+
+# Evaluation
+evaluation:
+  sentiment_bin_edges: [-1.0, -0.6, -0.2, 0.2, 0.6, 1.0]
+  electricity_cost_per_kwh: 0.12
+  delta_sentiment_flag: 0.30
+
+  # Target metrics
+  targets:
+    cohen_kappa_min: 0.70
+    pearson_r_min: 0.75
+    mae_max: 0.35
+    polarity_flips_max: 2
+
+# Logging
+logging:
+  level: "INFO"
+  pipeline_log: "logs/pipeline_ollama_cloud.log"
+  console_output: true
+
+# Output
+output:
+  results_dir: "data/results"
+  metrics_file: "data/results/validation_metrics_ollama_cloud.json"
+  detailed_file: "data/results/detailed_ollama_cloud.csv"
+
+# Ollama Cloud-specific settings
+ollama_cloud:
+  # Cost tracking (Ollama Cloud has session/weekly limits)
+  track_usage: true
+  log_api_calls: true
+
+  # Model information
+  models_info:
+    "gpt-oss:20b-cloud":
+      params: "20B"
+      description: "Good balance of speed and quality"
+    "gpt-oss:120b-cloud":
+      params: "120B"
+      description: "High quality, slower"
+    "deepseek-v3.1:671b-cloud":
+      params: "671B"
+      description: "Extremely large, best quality"
+    "kimi-k2:1t-cloud":
+      params: "1T"
+      description: "Massive model, exceptional quality"
+    "qwen3-coder:480b-cloud":
+      params: "480B"
+      description: "Specialized for code/technical content"
+
+# Performance expectations
+performance:
+  expected_accuracy: "75-85%"  # Higher than free Gemini
+  expected_runtime: "15-20 minutes"  # For 300 reviews
+  expected_cost: "$0 (session/weekly limits apply)"

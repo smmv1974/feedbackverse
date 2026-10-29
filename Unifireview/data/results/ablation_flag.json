@@ -1,0 +1,24 @@
+{
+  "comparison_date": "2025-11-10",
+  "base_model": "llama3.2:1b",
+  "alt_model": "phi3:mini",
+  "samples": 180,
+  "base_statistics": {
+    "mean_sentiment": 0.9972222222222222,
+    "std_sentiment": 0.03716413377849903,
+    "min_sentiment": 0.5,
+    "max_sentiment": 1.0
+  },
+  "alt_statistics": {
+    "mean_sentiment": 0.9972222222222222,
+    "std_sentiment": 0.03716413377849903,
+    "min_sentiment": 0.5,
+    "max_sentiment": 1.0
+  },
+  "differences": {
+    "mean_sentiment_delta": 0.0,
+    "std_sentiment_delta": 0.0
+  },
+  "flags": [],
+  "status": "complete"
+}

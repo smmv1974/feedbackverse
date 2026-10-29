@@ -1,0 +1,16 @@
+{
+  "rouge1": 0.3689,
+  "rouge2": 0.3689,
+  "rougeL": 0.3689,
+  "bertscore_F1": 0.3689,
+  "kappa_binned": 0.05213270142180104,
+  "mae": 0.69056,
+  "pearson_r": -0.05982268847445146,
+  "pearson_p": 0.6798402734222713,
+  "anova_F": 6.477839372591388,
+  "anova_p": 0.0032755712447095284,
+  "theme_precision": 0.0,
+  "theme_recall": 0.0,
+  "n": 50,
+  "fallback_overlap": true
+}

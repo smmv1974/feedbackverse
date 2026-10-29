@@ -1,0 +1,84 @@
+{
+  "timestamp": "2025-11-21 12:04:18",
+  "model": "ollama-cloud (gpt-oss:20b + gpt-oss:120b)",
+  "n_reviews": 10,
+  "total_time_s": 81.5325813293457,
+  "metrics": {
+    "cohen_kappa": 0.10447761194029848,
+    "pearson_r": 0.9027466224579024,
+    "pearson_p": 0.0003475280917803042,
+    "mae": 0.188
+  },
+  "predictions": [
+    {
+      "review_id": "test_0",
+      "predicted_sentiment": -0.9,
+      "actual_sentiment": -0.51,
+      "rating": 2,
+      "text_preview": "Beer service was lackluster. The first beer I orde..."
+    },
+    {
+      "review_id": "test_1",
+      "predicted_sentiment": 0.3,
+      "actual_sentiment": 0.16,
+      "rating": 3,
+      "text_preview": "Great place to stay if you want to be on Bourbon s..."
+    },
+    {
+      "review_id": "test_2",
+      "predicted_sentiment": -0.6,
+      "actual_sentiment": -0.95,
+      "rating": 1,
+      "text_preview": "I legit just walked into Blaze being 9pm and as so..."
+    },
+    {
+      "review_id": "test_3",
+      "predicted_sentiment": -0.9,
+      "actual_sentiment": -0.9,
+      "rating": 1,
+      "text_preview": "Wish I had read the reviews before we stopped for ..."
+    },
+    {
+      "review_id": "test_4",
+      "predicted_sentiment": -0.8,
+      "actual_sentiment": -0.92,
+      "rating": 1,
+      "text_preview": "Normally I like NYX products but not this one. It ..."
+    },
+    {
+      "review_id": "test_5",
+      "predicted_sentiment": 0.7,
+      "actual_sentiment": 0.59,
+      "rating": 4,
+      "text_preview": "This was our first time here. I had a coupon so I ..."
+    },
+    {
+      "review_id": "test_6",
+      "predicted_sentiment": -0.7,
+      "actual_sentiment": -0.88,
+      "rating": 1,
+      "text_preview": "Pretty slow service and the waitresses aren't very..."
+    },
+    {
+      "review_id": "test_7",
+      "predicted_sentiment": -0.9,
+      "actual_sentiment": -0.58,
+      "rating": 2,
+      "text_preview": "These scissors are no where near sharp enough to a..."
+    },
+    {
+      "review_id": "test_8",
+      "predicted_sentiment": -0.6,
+      "actual_sentiment": -0.56,
+      "rating": 2,
+      "text_preview": "A quasi political rant and a store review all wrap..."
+    },
+    {
+      "review_id": "test_9",
+      "predicted_sentiment": -0.7,
+      "actual_sentiment": -0.47,
+      "rating": 2,
+      "text_preview": "There's been three times that I've ordered a green..."
+    }
+  ]
+}

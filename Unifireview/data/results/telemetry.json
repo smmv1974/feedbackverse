@@ -1,0 +1,218 @@
+{
+  "elapsed_hours": 0.2414710111088223,
+  "avg_power_w": 16.613786295408833,
+  "electricity_cost": 0.0019302357996647257,
+  "batches": [
+    {
+      "label": "google-batch-0",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.973599999999998,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 26.39504337310791
+    },
+    {
+      "label": "google-batch-1",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.686189655172413,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 30.883323192596436
+    },
+    {
+      "label": "google-batch-2",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.847727272727273,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 23.164710521697998
+    },
+    {
+      "label": "google-batch-3",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.900283018867924,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 27.940381288528442
+    },
+    {
+      "label": "google-batch-4",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.615469387755102,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 26.516615867614746
+    },
+    {
+      "label": "google-batch-5",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 10.970776315789474,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 38.78935122489929
+    },
+    {
+      "label": "google-batch-6",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 15.0691,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 27.041240215301514
+    },
+    {
+      "label": "google-batch-7",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.38798113207547,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 27.764859199523926
+    },
+    {
+      "label": "google-batch-8",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.192302325581394,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 22.961300134658813
+    },
+    {
+      "label": "google-batch-9",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.260268292682927,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 21.554105043411255
+    },
+    {
+      "label": "google-batch-10",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.244696428571427,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 30.025569915771484
+    },
+    {
+      "label": "google-batch-11",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.16588888888889,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 23.471845388412476
+    },
+    {
+      "label": "google-batch-12",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.321386363636364,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 23.021965980529785
+    },
+    {
+      "label": "google-batch-13",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.344816326530612,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 25.697901725769043
+    },
+    {
+      "label": "google-batch-14",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.448730158730157,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 33.50533103942871
+    },
+    {
+      "label": "google-batch-15",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.58804255319149,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 25.511786699295044
+    },
+    {
+      "label": "google-batch-16",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.20432608695652,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 24.595091581344604
+    },
+    {
+      "label": "google-batch-17",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.396388059701493,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 35.63830280303955
+    },
+    {
+      "label": "google-batch-18",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.299603773584906,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 28.36575436592102
+    },
+    {
+      "label": "google-batch-19",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.57679245283019,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 27.736010551452637
+    },
+    {
+      "label": "trustpilot-batch-0",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.37844642857143,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 29.827661991119385
+    },
+    {
+      "label": "trustpilot-batch-1",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.528041666666667,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 25.068968296051025
+    },
+    {
+      "label": "trustpilot-batch-2",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.597591836734694,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 25.468435287475586
+    },
+    {
+      "label": "trustpilot-batch-3",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.33069565217391,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 24.479796171188354
+    },
+    {
+      "label": "trustpilot-batch-4",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.814724137931034,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 30.355279445648193
+    },
+    {
+      "label": "trustpilot-batch-5",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.218519230769232,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 27.86677646636963
+    },
+    {
+      "label": "trustpilot-batch-6",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.42965217391304,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 36.348530292510986
+    },
+    {
+      "label": "trustpilot-batch-7",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.20470909090909,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 29.320048332214355
+    },
+    {
+      "label": "trustpilot-batch-8",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 17.291826086956522,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 24.423871994018555
+    },
+    {
+      "label": "trustpilot-batch-9",
+      "avg_util_pct": 0.0,
+      "avg_power_w": 16.823716666666666,
+      "peak_vram_mb": 132.0,
+      "elapsed_s": 31.86422610282898
+    }
+  ],
+  "note": null
+}

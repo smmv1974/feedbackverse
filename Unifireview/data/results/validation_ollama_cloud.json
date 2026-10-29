@@ -1,0 +1,313 @@
+{
+  "timestamp": "2025-11-21 12:45:37",
+  "model": "ollama-cloud-120b",
+  "n_reviews": 50,
+  "time_minutes": 5.796083728472392,
+  "metrics": {
+    "cohen_kappa": 0.3403693931398417,
+    "pearson_r": 0.9036998625765134,
+    "mae": 0.2404
+  },
+  "predictions": [
+    {
+      "review_id": "qgilnHfm94uiGlB9hJB7gQ",
+      "predicted": -0.8,
+      "actual": -0.51,
+      "rating": 2
+    },
+    {
+      "review_id": "jHQiGVYdbT-9lQJmSg5rWQ",
+      "predicted": 0.4,
+      "actual": 0.16,
+      "rating": 3
+    },
+    {
+      "review_id": "-8RioWSSLRLN9ArBHloz0Q",
+      "predicted": -0.8,
+      "actual": -0.95,
+      "rating": 1
+    },
+    {
+      "review_id": "hoFBjn6qNY1V4_ZT9gJB3g",
+      "predicted": -0.8,
+      "actual": -0.9,
+      "rating": 1
+    },
+    {
+      "review_id": "B01M5KNSQN",
+      "predicted": -0.8,
+      "actual": -0.92,
+      "rating": 1
+    },
+    {
+      "review_id": "v_K7oJQrc3u4qowtDqXeFQ",
+      "predicted": 0.8,
+      "actual": 0.59,
+      "rating": 4
+    },
+    {
+      "review_id": "bVgpM_sA9AMAlL2R5TPNAQ",
+      "predicted": -0.45,
+      "actual": -0.88,
+      "rating": 1
+    },
+    {
+      "review_id": "B008TGSAFE",
+      "predicted": -0.9,
+      "actual": -0.58,
+      "rating": 2
+    },
+    {
+      "review_id": "0-8YJMqAill6hdhjlQfkbA",
+      "predicted": -0.5,
+      "actual": -0.56,
+      "rating": 2
+    },
+    {
+      "review_id": "Z0Jt8xf0XqFD_xjPPm_d0g",
+      "predicted": -0.8,
+      "actual": -0.47,
+      "rating": 2
+    },
+    {
+      "review_id": "B005FLNLM8",
+      "predicted": 0.85,
+      "actual": 0.89,
+      "rating": 5
+    },
+    {
+      "review_id": "2E228X223kkH-KPZtydEYQ",
+      "predicted": -0.8,
+      "actual": -0.85,
+      "rating": 1
+    },
+    {
+      "review_id": "9ew7Cp40N3z2AFq8qSD_kA",
+      "predicted": -0.9,
+      "actual": -0.57,
+      "rating": 2
+    },
+    {
+      "review_id": "B0B4JPGX8P",
+      "predicted": 0.7,
+      "actual": 0.46,
+      "rating": 4
+    },
+    {
+      "review_id": "gYKwhONeiszsrzi7dhT2pg",
+      "predicted": -0.9,
+      "actual": -0.58,
+      "rating": 2
+    },
+    {
+      "review_id": "Sk9DcKI55f0s_253vc50Ig",
+      "predicted": 0.35,
+      "actual": 0.61,
+      "rating": 4
+    },
+    {
+      "review_id": "BAe2yGGtKYS2cuC77dyuIw",
+      "predicted": -0.9,
+      "actual": -0.54,
+      "rating": 2
+    },
+    {
+      "review_id": "B07927V3SQ",
+      "predicted": -0.9,
+      "actual": -0.52,
+      "rating": 2
+    },
+    {
+      "review_id": "B0BNV4WRF3",
+      "predicted": -0.9,
+      "actual": -0.97,
+      "rating": 1
+    },
+    {
+      "review_id": "FNvdUOSG54IXzTXTYT6F9Q",
+      "predicted": 0.9,
+      "actual": 0.96,
+      "rating": 5
+    },
+    {
+      "review_id": "5wPq_FqKNx4NSdjW4MDCRQ",
+      "predicted": -0.9,
+      "actual": -0.54,
+      "rating": 2
+    },
+    {
+      "review_id": "8_SXG-Pg50n3qp7Fh5QyzQ",
+      "predicted": 0.9,
+      "actual": 0.54,
+      "rating": 4
+    },
+    {
+      "review_id": "aNaa3PTTx_sl8yi1_7LDJg",
+      "predicted": -0.9,
+      "actual": -0.94,
+      "rating": 1
+    },
+    {
+      "review_id": "A-AIvNIGCwUplBhjd2OMhg",
+      "predicted": 0.4,
+      "actual": 0.1,
+      "rating": 3
+    },
+    {
+      "review_id": "B08HH3CH34",
+      "predicted": 0.8,
+      "actual": 0.03,
+      "rating": 3
+    },
+    {
+      "review_id": "B088NCT267",
+      "predicted": -0.8,
+      "actual": -0.92,
+      "rating": 1
+    },
+    {
+      "review_id": "B077YR3333",
+      "predicted": -0.1,
+      "actual": 0.1,
+      "rating": 3
+    },
+    {
+      "review_id": "B07VGBBNTH",
+      "predicted": -0.9,
+      "actual": -0.84,
+      "rating": 1
+    },
+    {
+      "review_id": "UMapJqBmA5UAPK4oyqCe1A",
+      "predicted": -0.8,
+      "actual": -0.92,
+      "rating": 1
+    },
+    {
+      "review_id": "ZVvhc3Go7v5I8XTiVoWmqQ",
+      "predicted": -0.1,
+      "actual": 0.03,
+      "rating": 3
+    },
+    {
+      "review_id": "B08MCDB52J",
+      "predicted": 0.6,
+      "actual": 0.53,
+      "rating": 4
+    },
+    {
+      "review_id": "B099FH9Z3D",
+      "predicted": -0.3,
+      "actual": -0.82,
+      "rating": 1
+    },
+    {
+      "review_id": "RQ1MSJ6Rn4AZ2IJqEc6_vQ",
+      "predicted": 0.7,
+      "actual": 0.81,
+      "rating": 5
+    },
+    {
+      "review_id": "Bhn9WcAe2rO26HT-TLKK_Q",
+      "predicted": -0.95,
+      "actual": -0.88,
+      "rating": 1
+    },
+    {
+      "review_id": "BlKOJH3zP6L7LSK-61vYcw",
+      "predicted": -0.85,
+      "actual": -0.59,
+      "rating": 2
+    },
+    {
+      "review_id": "B64w3FRqtalYlf2JQyqSEw",
+      "predicted": 0.8,
+      "actual": 0.99,
+      "rating": 5
+    },
+    {
+      "review_id": "B00LIAZ8OO",
+      "predicted": 0.5,
+      "actual": 0.52,
+      "rating": 4
+    },
+    {
+      "review_id": "bg3TAimbMppppLUTfN46nA",
+      "predicted": -0.9,
+      "actual": -0.86,
+      "rating": 1
+    },
+    {
+      "review_id": "sOIEFZMEzb055tCO_tBSvQ",
+      "predicted": 0.95,
+      "actual": 0.55,
+      "rating": 4
+    },
+    {
+      "review_id": "X-CWXNjxwaqHwSME0Q3KpA",
+      "predicted": -0.9,
+      "actual": -0.52,
+      "rating": 2
+    },
+    {
+      "review_id": "MOQZ5X41OGCWAVZqY8UMgw",
+      "predicted": 0.8,
+      "actual": 0.53,
+      "rating": 4
+    },
+    {
+      "review_id": "dS-W9IAMB8ZA9VfF_uocUg",
+      "predicted": 0.9,
+      "actual": 0.8,
+      "rating": 5
+    },
+    {
+      "review_id": "9ZdVN-iWaoF98Qxrt9iCsA",
+      "predicted": 1.0,
+      "actual": 0.87,
+      "rating": 5
+    },
+    {
+      "review_id": "kaig0jLD975wUkXCHwSsnw",
+      "predicted": 0.5,
+      "actual": -0.95,
+      "rating": 1
+    },
+    {
+      "review_id": "JQN0crNdYAmAFkVZRlXlzw",
+      "predicted": 0.5,
+      "actual": 0.11,
+      "rating": 3
+    },
+    {
+      "review_id": "B08B4RN9WN",
+      "predicted": 0.8,
+      "actual": 0.92,
+      "rating": 5
+    },
+    {
+      "review_id": "eVGpceuQepWbl-Ss-EPU3w",
+      "predicted": 0.9,
+      "actual": 0.54,
+      "rating": 4
+    },
+    {
+      "review_id": "dwgJ7B_r3iuIqX0VpCoRTA",
+      "predicted": 0.8,
+      "actual": 0.94,
+      "rating": 5
+    },
+    {
+      "review_id": "ZWGKZdFa85OflcYODtMHuw",
+      "predicted": -1.0,
+      "actual": -0.86,
+      "rating": 1
+    },
+    {
+      "review_id": "du1YuJ9Bwrz60HYvdHxGZQ",
+      "predicted": -0.9,
+      "actual": -0.94,
+      "rating": 1
+    }
+  ]
+}

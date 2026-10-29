@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-12-07 17:13:14",
+  "n_reviews": 10,
+  "time_minutes": 1.4349287311236063,
+  "model": "ollama-cloud-120b",
+  "config": "config/config_ollama_cloud.yaml",
+  "metrics": {
+    "cohen_kappa": 0.06249999999999989,
+    "pearson_r": 0.8581400822330361,
+    "pearson_p": 0.0014876573305173434,
+    "mae": 0.23313348818528962
+  },
+  "predictions": [
+    {
+      "review_id": "qgilnHfm94uiGlB9hJB7gQ",
+      "predicted": -0.8458970107524514,
+      "actual": -0.51,
+      "rating": 2,
+      "text_preview": "Beer service was lackluster. The first beer I ordered had an off flavor (sour). ..."
+    },
+    {
+      "review_id": "jHQiGVYdbT-9lQJmSg5rWQ",
+      "predicted": -0.2410285256833955,
+      "actual": 0.16,
+      "rating": 3,
+      "text_preview": "Great place to stay if you want to be on Bourbon street.  The staff is really ho..."
+    },
+    {
+      "review_id": "-8RioWSSLRLN9ArBHloz0Q",
+      "predicted": -0.5946035575013605,
+      "actual": -0.95,
+      "rating": 1,
+      "text_preview": "I legit just walked into Blaze being 9pm and as soon as I got to the line I was ..."
+    },
+    {
+      "review_id": "hoFBjn6qNY1V4_ZT9gJB3g",
+      "predicted": -0.8458970107524514,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "Wish I had read the reviews before we stopped for dinner.  When we arrived there..."
+    },
+    {
+      "review_id": "B01M5KNSQN",
+      "predicted": -0.7239107359608682,
+      "actual": -0.92,
+      "rating": 1,
+      "text_preview": "Normally I like NYX products but not this one. It leaves a funny coating on your..."
+    },
+    {
+      "review_id": "v_K7oJQrc3u4qowtDqXeFQ",
+      "predicted": 0.8458970107524514,
+      "actual": 0.59,
+      "rating": 4,
+      "text_preview": "This was our first time here. I had a coupon so I thought I would try it out. Pu..."
+    },
+    {
+      "review_id": "bVgpM_sA9AMAlL2R5TPNAQ",
+      "predicted": -0.6817316198804996,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "Pretty slow service and the waitresses aren't very kind. I guess I was expecting..."
+    },
+    {
+      "review_id": "B008TGSAFE",
+      "predicted": -0.8458970107524514,
+      "actual": -0.58,
+      "rating": 2,
+      "text_preview": "These scissors are no where near sharp enough to adequately cut hair.  They are ..."
+    },
+    {
+      "review_id": "0-8YJMqAill6hdhjlQfkbA",
+      "predicted": -0.5029733718731741,
+      "actual": -0.56,
+      "rating": 2,
+      "text_preview": "A quasi political rant and a store review all wrapped in one, so enjoy. \n\nEver s..."
+    },
+    {
+      "review_id": "Z0Jt8xf0XqFD_xjPPm_d0g",
+      "predicted": -0.6817316198804996,
+      "actual": -0.47,
+      "rating": 2,
+      "text_preview": "There's been three times that I've ordered a green tea lemonade and got a peach ..."
+    }
+  ]
+}

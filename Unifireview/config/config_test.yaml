@@ -1,0 +1,145 @@
+cloud:
+  cost_per_1m_tokens:
+    azure_gpt4o_mini: 0.15
+    google_gemini: 0.0
+    groq: 0.0
+    openai_gpt4o_mini: 0.15
+  estimated_tokens_per_review:
+    input: 300
+    sentiment: 100
+    summary: 500
+    themes: 350
+    total: 1250
+  fallback_to_local_on_error: true
+  log_api_calls: true
+  max_concurrent_requests: 1
+  requests_per_minute: 15
+  retry_on_rate_limit: true
+  track_usage: true
+data:
+  collection_window:
+    end: '2024-11-01'
+    start: '2024-09-10'
+  validation:
+    file: data/validation/references_aligned.csv
+    sample_size: 10
+evaluation:
+  delta_sentiment_flag: 0.3
+  electricity_cost_per_kwh: 0.12
+  sentiment_bin_edges:
+  - -1.0
+  - -0.6
+  - -0.2
+  - 0.2
+  - 0.6
+  - 1.0
+  targets:
+    cohen_kappa_min: 0.7
+    mae_max: 0.35
+    pearson_r_min: 0.75
+    polarity_flips_max: 2
+future_enhancements:
+- 'Few-shot learning: Add 3-5 example reviews with ratings to improve accuracy'
+- 'Chain-of-thought: Add reasoning steps to sentiment prompts'
+- 'Ensemble: Combine multiple models for higher accuracy (80-85%)'
+- 'Fine-tuning: If budget permits, fine-tune on domain-specific reviews'
+- 'Multi-task learning: Train single model for all tasks (summary, sentiment, themes)'
+grounding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  thresholds:
+    flag: 0.5
+    strong: 0.7
+llm:
+  cloud:
+    enabled: true
+    fallback_1:
+      api_key_env: GROQ_API_KEY
+      max_retries: 3
+      model: meta-llama/llama-4-scout-17b-16e-instruct
+      provider: groq
+      timeout: 60
+    fallback_2:
+      api_key_env: OPENAI_API_KEY
+      max_retries: 3
+      model: gpt-4o-mini
+      provider: openai
+      timeout: 90
+    fallback_3:
+      api_key_env: AZURE_OPENAI_API_KEY
+      endpoint_env: AZURE_OPENAI_ENDPOINT
+      max_retries: 3
+      model: gpt-4o-mini
+      provider: azure
+      timeout: 90
+    local_fallback:
+      enabled: true
+      model: qwen2.5:3b-instruct
+    primary:
+      api_key_env: GOOGLE_API_KEY
+      max_retries: 3
+      model: gemini-2.5-flash
+      provider: google
+      timeout: 90
+  generation:
+    repeat_penalty: 1.1
+    temperature: 0.1
+    tokens:
+      summary_max: 500
+      themes_max: 350
+    top_p: 0.95
+  models:
+    alt_small:
+      fallback: qwen2.5:3b-instruct
+      name: cloud
+    sentiment:
+      fallback: qwen2.5:3b-instruct
+      name: cloud
+    summarization:
+      fallback: qwen2.5:3b-instruct
+      name: cloud
+    themes:
+      fallback: qwen2.5:3b-instruct
+      name: cloud
+  server:
+    base_url: http://127.0.0.1:11434
+    timeout: 180
+logging:
+  console_output: true
+  level: INFO
+  pipeline_log: logs/pipeline_production.log
+  verbose: true
+output:
+  detailed_file: data/results/detailed_production.csv
+  metrics_file: data/results/validation_metrics_production.json
+  results_dir: data/results
+  save_embeddings: false
+  save_predictions: true
+performance:
+  expected_accuracy:
+    google_gemini: 70-80%
+    groq: 60-70%
+    local_qwen: 30-40%
+  expected_cost:
+    google_gemini: $0.00
+    groq: $0.00
+    local_qwen: $0.00
+    openai: $0.056
+  expected_runtime:
+    google_gemini: 15-20 minutes
+    groq: 10-15 minutes
+    local_qwen: 30-40 minutes
+pipeline:
+  batch_size: 3
+  checkpoint_frequency: 20
+  delay_between_batches: 1
+  delay_between_requests: 0.5
+  max_retries: 3
+  save_intermediate: true
+  skip_failed_reviews: false
+  stop_on_critical_error: false
+token_budget:
+  azure_cost: 0.056
+  estimated_total: 375000
+  google_gemini_daily_limit: 1000000
+  groq_rate_limit: 14400
+  openai_cost: 0.056

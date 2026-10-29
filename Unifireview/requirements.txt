@@ -1,0 +1,79 @@
+# requirements.txt
+# Core dependencies for the review analysis system
+
+# Web Scraping
+requests
+beautifulsoup4
+selenium>=4.0.0
+webdriver-manager>=4.0.0
+apify-client>=1.0.0
+
+# Data Processing
+pandas
+numpy
+scipy
+rapidfuzz
+python-Levenshtein
+
+# NLP & Text Processing
+langdetect
+nltk
+textblob
+sentence-transformers
+torch
+
+# LLM Integration (Ollama)
+ollama
+langchain
+langchain-community
+
+# Metrics & Evaluation
+scikit-learn
+rouge-score
+bert-score
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Streamlit Dashboard
+streamlit>=1.29.0
+streamlit-extras
+
+# Utilities
+python-dotenv
+tqdm
+pyyaml
+pynvml
+
+# Database (lightweight)
+sqlalchemy
+
+# API (Yelp)
+yelpapi
+
+# ============================================
+# INSTALLATION INSTRUCTIONS
+# ============================================
+# 
+# 1. Create virtual environment:
+#    python -m venv venv
+#    venv\Scripts\activate  (Windows)
+#
+# 2. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Download NLTK data (run in Python):
+#    import nltk
+#    nltk.download('punkt')
+#    nltk.download('stopwords')
+#    nltk.download('vader_lexicon')
+#
+# 4. Install Ollama (if not already):
+#    - Download from: https://ollama.ai/download
+#    - Pull model: ollama pull llama3.2:3b-instruct-q4_0
+#
+# 5. Setup ChromeDriver for Selenium (auto-handled by webdriver-manager)
+#
+# ============================================

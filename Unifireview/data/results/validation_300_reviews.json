@@ -1,0 +1,2115 @@
+{
+  "timestamp": "2025-11-29 18:09:11",
+  "n_reviews": 300,
+  "time_minutes": 34.254726362228396,
+  "model": "ollama-cloud-120b",
+  "config": "config/config_ollama_cloud.yaml",
+  "metrics": {
+    "cohen_kappa": 0.3613920795474027,
+    "pearson_r": 0.9125390106899904,
+    "pearson_p": 9.867436362359395e-118,
+    "mae": 0.22338059395584603
+  },
+  "predictions": [
+    {
+      "review_id": "qgilnHfm94uiGlB9hJB7gQ",
+      "predicted": -0.8458970107524514,
+      "actual": -0.51,
+      "rating": 2,
+      "text_preview": "Beer service was lackluster. The first beer I ordered had an off flavor (sour). ..."
+    },
+    {
+      "review_id": "jHQiGVYdbT-9lQJmSg5rWQ",
+      "predicted": 0.4053600464421103,
+      "actual": 0.16,
+      "rating": 3,
+      "text_preview": "Great place to stay if you want to be on Bourbon street.  The staff is really ho..."
+    },
+    {
+      "review_id": "-8RioWSSLRLN9ArBHloz0Q",
+      "predicted": -0.5946035575013605,
+      "actual": -0.95,
+      "rating": 1,
+      "text_preview": "I legit just walked into Blaze being 9pm and as soon as I got to the line I was ..."
+    },
+    {
+      "review_id": "hoFBjn6qNY1V4_ZT9gJB3g",
+      "predicted": -0.8059274488676564,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "Wish I had read the reviews before we stopped for dinner.  When we arrived there..."
+    },
+    {
+      "review_id": "B01M5KNSQN",
+      "predicted": -0.6817316198804996,
+      "actual": -0.92,
+      "rating": 1,
+      "text_preview": "Normally I like NYX products but not this one. It leaves a funny coating on your..."
+    },
+    {
+      "review_id": "v_K7oJQrc3u4qowtDqXeFQ",
+      "predicted": 0.8458970107524514,
+      "actual": 0.59,
+      "rating": 4,
+      "text_preview": "This was our first time here. I had a coupon so I thought I would try it out. Pu..."
+    },
+    {
+      "review_id": "bVgpM_sA9AMAlL2R5TPNAQ",
+      "predicted": -0.6817316198804996,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "Pretty slow service and the waitresses aren't very kind. I guess I was expecting..."
+    },
+    {
+      "review_id": "B008TGSAFE",
+      "predicted": -0.8458970107524514,
+      "actual": -0.58,
+      "rating": 2,
+      "text_preview": "These scissors are no where near sharp enough to adequately cut hair.  They are ..."
+    },
+    {
+      "review_id": "0-8YJMqAill6hdhjlQfkbA",
+      "predicted": -0.6386633830041155,
+      "actual": -0.56,
+      "rating": 2,
+      "text_preview": "A quasi political rant and a store review all wrapped in one, so enjoy. \n\nEver s..."
+    },
+    {
+      "review_id": "Z0Jt8xf0XqFD_xjPPm_d0g",
+      "predicted": -0.6817316198804996,
+      "actual": -0.47,
+      "rating": 2,
+      "text_preview": "There's been three times that I've ordered a green tea lemonade and got a peach ..."
+    },
+    {
+      "review_id": "B005FLNLM8",
+      "predicted": 0.6817316198804996,
+      "actual": 0.89,
+      "rating": 5,
+      "text_preview": "This is a light cream that makes your skin feel so smooth and yummy. There is a ..."
+    },
+    {
+      "review_id": "2E228X223kkH-KPZtydEYQ",
+      "predicted": -0.8458970107524514,
+      "actual": -0.85,
+      "rating": 1,
+      "text_preview": "It saddens me to say this but I think I need a new nail salon. I have consistent..."
+    },
+    {
+      "review_id": "9ew7Cp40N3z2AFq8qSD_kA",
+      "predicted": -0.6817316198804996,
+      "actual": -0.57,
+      "rating": 2,
+      "text_preview": "The service is going to be slooooww. And the food okay. Do not come here if you ..."
+    },
+    {
+      "review_id": "B0B4JPGX8P",
+      "predicted": 0.6817316198804996,
+      "actual": 0.46,
+      "rating": 4,
+      "text_preview": "This is a good way to use a face oil. Normally I skip facial oils because I don'..."
+    },
+    {
+      "review_id": "gYKwhONeiszsrzi7dhT2pg",
+      "predicted": -0.8852464509219427,
+      "actual": -0.58,
+      "rating": 2,
+      "text_preview": "Well, well.... Where do I start with this place? First time experience, went in ..."
+    },
+    {
+      "review_id": "Sk9DcKI55f0s_253vc50Ig",
+      "predicted": 0.549426225222706,
+      "actual": 0.61,
+      "rating": 4,
+      "text_preview": "Yes, it's a little pricey, but it was darned near worth it. \nIt certainly didn't..."
+    },
+    {
+      "review_id": "BAe2yGGtKYS2cuC77dyuIw",
+      "predicted": -0.8852464509219427,
+      "actual": -0.54,
+      "rating": 2,
+      "text_preview": "We recently purchased a used car for my son, it was a 2006 and of course comes w..."
+    },
+    {
+      "review_id": "B07927V3SQ",
+      "predicted": -0.8458970107524514,
+      "actual": -0.52,
+      "rating": 2,
+      "text_preview": "Dry, crumbly and impossible to even get on.  Smells were not my favorite.  Won\u2019t..."
+    },
+    {
+      "review_id": "B0BNV4WRF3",
+      "predicted": -0.9240210864723069,
+      "actual": -0.97,
+      "rating": 1,
+      "text_preview": "This topper is comparable to one for $9.99 on the Asian websites.  The color is ..."
+    },
+    {
+      "review_id": "FNvdUOSG54IXzTXTYT6F9Q",
+      "predicted": 0.6817316198804996,
+      "actual": 0.96,
+      "rating": 5,
+      "text_preview": "I've been a few times and I haven't been disappointed yet. Its for meat eaters, ..."
+    },
+    {
+      "review_id": "5wPq_FqKNx4NSdjW4MDCRQ",
+      "predicted": -0.8458970107524514,
+      "actual": -0.54,
+      "rating": 2,
+      "text_preview": "Hate to be harsh but dang! After having a limited selection at terminal F I fina..."
+    },
+    {
+      "review_id": "8_SXG-Pg50n3qp7Fh5QyzQ",
+      "predicted": 0.6817316198804996,
+      "actual": 0.54,
+      "rating": 4,
+      "text_preview": "The decor of this restaurant is pretty modern.  It seems great for people in the..."
+    },
+    {
+      "review_id": "aNaa3PTTx_sl8yi1_7LDJg",
+      "predicted": -0.8458970107524514,
+      "actual": -0.94,
+      "rating": 1,
+      "text_preview": "I have straight hair and it turns out best if it's done with scissors . I said I..."
+    },
+    {
+      "review_id": "A-AIvNIGCwUplBhjd2OMhg",
+      "predicted": 0.3535533905932738,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "Their sushi is pretty good. Mesa rolls are my fav here. They would be 4stars if ..."
+    },
+    {
+      "review_id": "B08HH3CH34",
+      "predicted": 0.7652855797503654,
+      "actual": 0.03,
+      "rating": 3,
+      "text_preview": "Gift for vulnerable family members.<br />Gift was well received and appreciated...."
+    },
+    {
+      "review_id": "B088NCT267",
+      "predicted": -0.6817316198804996,
+      "actual": -0.92,
+      "rating": 1,
+      "text_preview": "Too big. No good directions..."
+    },
+    {
+      "review_id": "B077YR3333",
+      "predicted": 0.0,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "I am in my early 50's and have been a regular user of anti-aging products for th..."
+    },
+    {
+      "review_id": "B07VGBBNTH",
+      "predicted": -0.8059274488676564,
+      "actual": -0.84,
+      "rating": 1,
+      "text_preview": "This comes as a set and no matter what I do, the shampoo bottle will not open. T..."
+    },
+    {
+      "review_id": "UMapJqBmA5UAPK4oyqCe1A",
+      "predicted": -0.7239107359608682,
+      "actual": -0.92,
+      "rating": 1,
+      "text_preview": "Four of us had dinner at the Sockeye Grill this weekend.  Service was terrible. ..."
+    },
+    {
+      "review_id": "ZVvhc3Go7v5I8XTiVoWmqQ",
+      "predicted": 0.3535533905932738,
+      "actual": 0.03,
+      "rating": 3,
+      "text_preview": "Upland is a brewery based out of Bloomington, Indiana that has become popular en..."
+    },
+    {
+      "review_id": "B08MCDB52J",
+      "predicted": 0.549426225222706,
+      "actual": 0.53,
+      "rating": 4,
+      "text_preview": "I love the results of this lotion. It is creamy and not too thin or thick and ab..."
+    },
+    {
+      "review_id": "B099FH9Z3D",
+      "predicted": -0.10573712634405642,
+      "actual": -0.82,
+      "rating": 1,
+      "text_preview": "The color was pretty but they were frizzy..."
+    },
+    {
+      "review_id": "RQ1MSJ6Rn4AZ2IJqEc6_vQ",
+      "predicted": 0.8059274488676564,
+      "actual": 0.81,
+      "rating": 5,
+      "text_preview": "Mahi Mahi was great, large portion. You could split a meal.You must like smoked ..."
+    },
+    {
+      "review_id": "Bhn9WcAe2rO26HT-TLKK_Q",
+      "predicted": -0.9622606002309622,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "Awefull!!!! \nIf I could give zero or negative stars I would!\nI've never wrote a ..."
+    },
+    {
+      "review_id": "BlKOJH3zP6L7LSK-61vYcw",
+      "predicted": -0.8852464509219427,
+      "actual": -0.59,
+      "rating": 2,
+      "text_preview": "I've been having a terrible time in St Louis finding a decent Chinese place that..."
+    },
+    {
+      "review_id": "B64w3FRqtalYlf2JQyqSEw",
+      "predicted": 0.8458970107524514,
+      "actual": 0.99,
+      "rating": 5,
+      "text_preview": "THE BEST place to go for gyros! The quality of their food is amazing. I always g..."
+    },
+    {
+      "review_id": "B00LIAZ8OO",
+      "predicted": 0.4053600464421103,
+      "actual": 0.52,
+      "rating": 4,
+      "text_preview": "It's a little small but works just fine. I was able to fit all my travel sized i..."
+    },
+    {
+      "review_id": "bg3TAimbMppppLUTfN46nA",
+      "predicted": -0.9622606002309622,
+      "actual": -0.86,
+      "rating": 1,
+      "text_preview": "AVOID AT ALL COSTS\nBy far the worst pizza I've had. Thin crust was not crunchy, ..."
+    },
+    {
+      "review_id": "sOIEFZMEzb055tCO_tBSvQ",
+      "predicted": 0.9240210864723069,
+      "actual": 0.55,
+      "rating": 4,
+      "text_preview": "Excellent.  Went there for lunch (the budget option).  Prix fixe menu was tempti..."
+    },
+    {
+      "review_id": "X-CWXNjxwaqHwSME0Q3KpA",
+      "predicted": -0.9240210864723069,
+      "actual": -0.52,
+      "rating": 2,
+      "text_preview": "Terrace Lounge appears to want to have a great cocktail venue, but they fall sho..."
+    },
+    {
+      "review_id": "MOQZ5X41OGCWAVZqY8UMgw",
+      "predicted": 0.8852464509219427,
+      "actual": 0.53,
+      "rating": 4,
+      "text_preview": "I love it!  The reviews were great and I was desperate for good carry out, so we..."
+    },
+    {
+      "review_id": "dS-W9IAMB8ZA9VfF_uocUg",
+      "predicted": 0.8852464509219427,
+      "actual": 0.8,
+      "rating": 5,
+      "text_preview": "Really liked this store yesterday. Great selection, I was impressed by Chloe and..."
+    },
+    {
+      "review_id": "9ZdVN-iWaoF98Qxrt9iCsA",
+      "predicted": 0.9240210864723069,
+      "actual": 0.87,
+      "rating": 5,
+      "text_preview": "The food and service is fantastic.  Everything is fresh and bursting with flavor..."
+    },
+    {
+      "review_id": "kaig0jLD975wUkXCHwSsnw",
+      "predicted": 0.4053600464421103,
+      "actual": -0.95,
+      "rating": 1,
+      "text_preview": "Staff member wouldn't let us use guest pass on our first time there. He said our..."
+    },
+    {
+      "review_id": "JQN0crNdYAmAFkVZRlXlzw",
+      "predicted": 0.549426225222706,
+      "actual": 0.11,
+      "rating": 3,
+      "text_preview": "With all the talk of bbq tips, sweetie pie, etc of St. Louis...I decided to try ..."
+    },
+    {
+      "review_id": "B08B4RN9WN",
+      "predicted": 0.8059274488676564,
+      "actual": 0.92,
+      "rating": 5,
+      "text_preview": "This nail lamp was bought for myself and the girls when we meet up for beauty ti..."
+    },
+    {
+      "review_id": "eVGpceuQepWbl-Ss-EPU3w",
+      "predicted": 0.8852464509219427,
+      "actual": 0.54,
+      "rating": 4,
+      "text_preview": "After visiting with friends and indulging in lots of tastes, consider this my ne..."
+    },
+    {
+      "review_id": "dwgJ7B_r3iuIqX0VpCoRTA",
+      "predicted": 0.7652855797503654,
+      "actual": 0.94,
+      "rating": 5,
+      "text_preview": "We went there with several family members and had a good afternoon. The staff wa..."
+    },
+    {
+      "review_id": "ZWGKZdFa85OflcYODtMHuw",
+      "predicted": -0.9240210864723069,
+      "actual": -0.86,
+      "rating": 1,
+      "text_preview": "This salon is filthy.  There are cobwebs and dust every where.  The equipment is..."
+    },
+    {
+      "review_id": "du1YuJ9Bwrz60HYvdHxGZQ",
+      "predicted": -0.8852464509219427,
+      "actual": -0.94,
+      "rating": 1,
+      "text_preview": "STAY AWAY! I am a gold member, so I stay at Hamptons frequently. I have stayed h..."
+    },
+    {
+      "review_id": "S79tU1cnlxnYhm8zfb8LyA",
+      "predicted": -0.6817316198804996,
+      "actual": -0.92,
+      "rating": 1,
+      "text_preview": "This place's posted hours include a 10PM closing time. \n\nI walked in at 8:30 and..."
+    },
+    {
+      "review_id": "BJBCO_KP4o0jTBCl84nuhQ",
+      "predicted": -0.5029733718731741,
+      "actual": 0.07,
+      "rating": 3,
+      "text_preview": "Needs some attention in the dining room. Good salad  but skimpy on the bread. No..."
+    },
+    {
+      "review_id": "I7XGtAW-KkzVDvtCvXAY0g",
+      "predicted": 0.2410285256833955,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "The worker was awesome; this is a review for the company.  The price paid isn't ..."
+    },
+    {
+      "review_id": "B084D86YL8",
+      "predicted": -0.29906975624424414,
+      "actual": 0.21,
+      "rating": 3,
+      "text_preview": "I guess I'm not the right target audience for this Vitamin C/Retinol Moisturizer..."
+    },
+    {
+      "review_id": "6d9hz8LsjvkXjViPW4xaRA",
+      "predicted": -0.6817316198804996,
+      "actual": -0.6,
+      "rating": 2,
+      "text_preview": "We stopped at Tako due to the positive reviews on yelp. We brought a bottle of w..."
+    },
+    {
+      "review_id": "y1CYqccQLsn8GGXYS4q6tQ",
+      "predicted": -0.8458970107524514,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "They served me a frozen pizza and skunked beer.  'Nuff said...."
+    },
+    {
+      "review_id": "pgESDcC7eDx4z_epqon4_Q",
+      "predicted": -0.6386633830041155,
+      "actual": -1.0,
+      "rating": 1,
+      "text_preview": "Came for all-you-can-eat, and ended up waiting for over half an hour to get our ..."
+    },
+    {
+      "review_id": "48Mv4oT4Q8MdbFV0CXi3cQ",
+      "predicted": -0.7239107359608682,
+      "actual": -0.55,
+      "rating": 2,
+      "text_preview": "Tried this place out after many suggestions from friends.  We went in one night ..."
+    },
+    {
+      "review_id": "e4H9r1BSvBGAVQ-HvelnhA",
+      "predicted": -0.9240210864723069,
+      "actual": -0.96,
+      "rating": 1,
+      "text_preview": "Worst place I've ever visited. The bouncer was rude and he didn't have to be. Th..."
+    },
+    {
+      "review_id": "B08PD5FNFC",
+      "predicted": -0.6817316198804996,
+      "actual": -0.6,
+      "rating": 2,
+      "text_preview": "These fall apart easily..."
+    },
+    {
+      "review_id": "jazQvYxoflZm6BBjmh1gZg",
+      "predicted": 0.8852464509219427,
+      "actual": 0.96,
+      "rating": 5,
+      "text_preview": "I had numerous things happen during my move and required additional services fro..."
+    },
+    {
+      "review_id": "KU_O5udG6zpxOg-VcAEodg",
+      "predicted": -0.5029733718731741,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "If you decide to eat here, just be aware it is going to take about 2 hours from ..."
+    },
+    {
+      "review_id": "upZ4kUcTgNnpeCp9ijUgIQ",
+      "predicted": -0.5946035575013605,
+      "actual": 0.04,
+      "rating": 3,
+      "text_preview": "Husband and I made a mistake and came here on a Lenten Friday. The wait was fore..."
+    },
+    {
+      "review_id": "vO3U8-c5_vxRQ1hIrNeeOw",
+      "predicted": -0.6817316198804996,
+      "actual": -0.57,
+      "rating": 2,
+      "text_preview": "First off, it is a bar through and through. The alcohol selection is good and th..."
+    },
+    {
+      "review_id": "MLBz8yi-26Dez0wpuEyvtQ",
+      "predicted": -0.9622606002309622,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "Worst experience ever!!!! \n\nI stood in line today for 1 hour and 20 minutes for ..."
+    },
+    {
+      "review_id": "UVyf-nDeSNrpJsDpbHJZGg",
+      "predicted": 0.6817316198804996,
+      "actual": 0.88,
+      "rating": 5,
+      "text_preview": "the best frozen yogurt i have found in the central bucks area (at the time of th..."
+    },
+    {
+      "review_id": "mT1xvyI4HHS7vZHAGGZIXQ",
+      "predicted": 0.9240210864723069,
+      "actual": 0.9,
+      "rating": 5,
+      "text_preview": "Great place for happy hour. Oysters were deLISH! My friend and I had 2 dozen and..."
+    },
+    {
+      "review_id": "6QY0KfUbIMSbVVNnSSes-g",
+      "predicted": 0.8059274488676564,
+      "actual": 0.52,
+      "rating": 4,
+      "text_preview": "The Lemon Cake is as good as it is heavy.    It was my second visit to Cake Life..."
+    },
+    {
+      "review_id": "YjZGv_lRWFStP_o3vort-A",
+      "predicted": 0.8852464509219427,
+      "actual": 0.96,
+      "rating": 5,
+      "text_preview": "Attended a party there. They now have a private room with your own bar and bathr..."
+    },
+    {
+      "review_id": "B00EWUFETQ",
+      "predicted": -0.8458970107524514,
+      "actual": -0.44,
+      "rating": 2,
+      "text_preview": "So many things wrong; where to start.  First of all, the image portrays a nice s..."
+    },
+    {
+      "review_id": "MM2X6ZhpDcX5xGt3gCnd3w",
+      "predicted": -0.29906975624424414,
+      "actual": 0.07,
+      "rating": 3,
+      "text_preview": "Really not sure what the hype was when it opened. It's fine, the ambiance was ni..."
+    },
+    {
+      "review_id": "-RsFYcZz0HeSrAhu5xDWBg",
+      "predicted": -0.7239107359608682,
+      "actual": -0.6,
+      "rating": 2,
+      "text_preview": "My sister-in-law and I visited this restaurant on 8/28/15 mid afternoon.  We wer..."
+    },
+    {
+      "review_id": "651IreQ5u5j2WiVID_HK6A",
+      "predicted": -0.6817316198804996,
+      "actual": 0.14,
+      "rating": 3,
+      "text_preview": "Average or slightly above, despite the hype.  On the expensive side.  For $10 or..."
+    },
+    {
+      "review_id": "WP3w3rZSlsoNI2XGc3rIhg",
+      "predicted": 0.8852464509219427,
+      "actual": 0.53,
+      "rating": 4,
+      "text_preview": "I would eat anything they served me. I haven't even had the pancakes yet and I'm..."
+    },
+    {
+      "review_id": "B08HMLXW65",
+      "predicted": 0.0,
+      "actual": 0.11,
+      "rating": 3,
+      "text_preview": "This is a very nice set of 6 clips, 10 hair ties, and a case. The clips are stro..."
+    },
+    {
+      "review_id": "5TN1g0CQ2WQi-Yg1BSFImQ",
+      "predicted": 0.9240210864723069,
+      "actual": 0.55,
+      "rating": 4,
+      "text_preview": "Came to see my son's band Last Frontier. The staff and food here is top notch!  ..."
+    },
+    {
+      "review_id": "B01KDPA96G",
+      "predicted": -0.8458970107524514,
+      "actual": -0.87,
+      "rating": 1,
+      "text_preview": "I would not recommend this comb. It smells awful! You cannot use on wet hair or ..."
+    },
+    {
+      "review_id": "4DFXlyM4wJWzHYwjxLVv7g",
+      "predicted": -0.8458970107524514,
+      "actual": -0.49,
+      "rating": 2,
+      "text_preview": "Overpriced and underwhelming.  Had the sausage/egg:cheese sandwich this morning ..."
+    },
+    {
+      "review_id": "quiZPC8t-iZs1uiMA1ovEQ",
+      "predicted": 0.9240210864723069,
+      "actual": 0.88,
+      "rating": 5,
+      "text_preview": "Stopped in for the lunch menu with my girlfriend, place was extremely clean, foo..."
+    },
+    {
+      "review_id": "B00G9XOZRG",
+      "predicted": 0.5029733718731741,
+      "actual": 0.11,
+      "rating": 3,
+      "text_preview": "I like their volumizing 2in1 better..."
+    },
+    {
+      "review_id": "22n_UbOS_iqKKR3IrYhNGw",
+      "predicted": -0.9240210864723069,
+      "actual": -0.85,
+      "rating": 1,
+      "text_preview": "I went here when if first opened, and have never desired to go back again, I was..."
+    },
+    {
+      "review_id": "dpgq69tsI2f_GpRH71hQsA",
+      "predicted": -0.29906975624424414,
+      "actual": 0.15,
+      "rating": 3,
+      "text_preview": "This was a tough one!   On the merits of the wine, fairly average... I understan..."
+    },
+    {
+      "review_id": "yFV9UnuTR3wqCVRwkeYGxA",
+      "predicted": -0.8852464509219427,
+      "actual": -0.87,
+      "rating": 1,
+      "text_preview": "It's a good thing I've had a few weeks to cool off from my experience at Copaban..."
+    },
+    {
+      "review_id": "81QT9uJgY_dQuD1sLF6psA",
+      "predicted": -0.8852464509219427,
+      "actual": -0.87,
+      "rating": 1,
+      "text_preview": "this place was awful. the first time my mother and I went we were very excited b..."
+    },
+    {
+      "review_id": "pHwbdway4yeI-dSSmZA7-Q",
+      "predicted": 0.8059274488676564,
+      "actual": 0.61,
+      "rating": 4,
+      "text_preview": "We checked in around 2:30 pm.  Check-in was quick and easy with complimentary va..."
+    },
+    {
+      "review_id": "yjQIyHFpnUKh49X4HYJuSQ",
+      "predicted": 0.9240210864723069,
+      "actual": 0.61,
+      "rating": 4,
+      "text_preview": "We love this movie theater/ bar/ restaurant. Great drinks, friendly service and ..."
+    },
+    {
+      "review_id": "k5foen6qbRssONseGEc0aw",
+      "predicted": 0.5946035575013605,
+      "actual": 0.61,
+      "rating": 4,
+      "text_preview": "This is a nice Indian buffet with a pretty wide selection.  There is nothing tha..."
+    },
+    {
+      "review_id": "ncnloPfbW4Sxj6NzTxLe7Q",
+      "predicted": -0.6817316198804996,
+      "actual": -0.56,
+      "rating": 2,
+      "text_preview": "I was here a few times because my friends won free happy hours. When I won one, ..."
+    },
+    {
+      "review_id": "pl5AjpEcFxFTltkBvHjsRA",
+      "predicted": -0.8852464509219427,
+      "actual": -0.98,
+      "rating": 1,
+      "text_preview": "Been to this location twice and will never go back again!!!!\n\nFirst time was med..."
+    },
+    {
+      "review_id": "BIrLDhcGSnGoj7tRz4pC4w",
+      "predicted": 0.9240210864723069,
+      "actual": 0.5,
+      "rating": 4,
+      "text_preview": "I met a buddy mine at this spot that I have always wanted to go to, but have nev..."
+    },
+    {
+      "review_id": "qla2rud5biJAYTaPATQ6Qw",
+      "predicted": 0.4053600464421103,
+      "actual": 0.04,
+      "rating": 3,
+      "text_preview": "This tour is one to take when you want to have a lazy day, but you want to do a ..."
+    },
+    {
+      "review_id": "B06Y6Q2C7B",
+      "predicted": 0.7652855797503654,
+      "actual": 0.5,
+      "rating": 4,
+      "text_preview": "The shower sponges are just slightly smaller than the average ones sold, however..."
+    },
+    {
+      "review_id": "B086QY6T7N",
+      "predicted": 0.8458970107524514,
+      "actual": 0.84,
+      "rating": 5,
+      "text_preview": "I get Keratin treatments at the salon at least 3-4 times a year (would do it mor..."
+    },
+    {
+      "review_id": "cCs7yPSyk8NdA-Ufoz_7hw",
+      "predicted": -0.6817316198804996,
+      "actual": -0.57,
+      "rating": 2,
+      "text_preview": "The service here has gone down. We used to go here a lot but now we go to anothe..."
+    },
+    {
+      "review_id": "HSjRz31mvRBQRo8deXrr_w",
+      "predicted": -0.6817316198804996,
+      "actual": -0.59,
+      "rating": 2,
+      "text_preview": "Too big, too expensive and too far from Downtown.  \n\nI was here for a conference..."
+    },
+    {
+      "review_id": "zIVkwgahZjOneChZFUYY4g",
+      "predicted": 0.9240210864723069,
+      "actual": 0.89,
+      "rating": 5,
+      "text_preview": "Love this place! Almost all of their menu items can be made vegan. They are supe..."
+    },
+    {
+      "review_id": "Rzxws4o77wDp3dGw7Y1V0A",
+      "predicted": 0.8852464509219427,
+      "actual": 0.92,
+      "rating": 5,
+      "text_preview": "We came here for an early mothers day celebration as we were on the quest to fin..."
+    },
+    {
+      "review_id": "B097BN5VXR",
+      "predicted": -0.8458970107524514,
+      "actual": -0.93,
+      "rating": 1,
+      "text_preview": "It was very painful to use! It pulled and tugged and left me raw! I couldn't use..."
+    },
+    {
+      "review_id": "B01FVUMG28",
+      "predicted": -0.8059274488676564,
+      "actual": -0.89,
+      "rating": 1,
+      "text_preview": "cheap stuff... bumpy surface, paint is chipping off after one use. It's not wort..."
+    },
+    {
+      "review_id": "xoZmWuioJtp1Jw1WSqT-7A",
+      "predicted": 0.9622606002309622,
+      "actual": 0.94,
+      "rating": 5,
+      "text_preview": "Last May, my wife and I used Jump on the School Bus to take our wedding guests o..."
+    },
+    {
+      "review_id": "VJxazz5W7xzOw-MylSeQCA",
+      "predicted": -0.8852464509219427,
+      "actual": -0.95,
+      "rating": 1,
+      "text_preview": "Really disappointed. I've been to the Marathon at 18/Spruce and had excellent se..."
+    },
+    {
+      "review_id": "8hhihH_KsgjY_uavKMY2Gg",
+      "predicted": -0.1778279410038923,
+      "actual": -0.52,
+      "rating": 2,
+      "text_preview": "Tacos.....\nThe chips and salsa were pretty lame.....and the tacos were ok.....no..."
+    },
+    {
+      "review_id": "B0B8F6MWFJ",
+      "predicted": -0.29906975624424414,
+      "actual": -0.04,
+      "rating": 3,
+      "text_preview": "I wish I loved this. This is a nicely packaged perfume in an attractive bottle w..."
+    },
+    {
+      "review_id": "B08DXDLR3P",
+      "predicted": 0.6817316198804996,
+      "actual": 0.55,
+      "rating": 4,
+      "text_preview": "This mask support works great.  It does what it's supposed to do. It keeps your ..."
+    },
+    {
+      "review_id": "CHo2CsqbukzKhTBag244AQ",
+      "predicted": 0.8059274488676564,
+      "actual": 0.57,
+      "rating": 4,
+      "text_preview": "It may be a bit pricey, but it's good food in the cafe and a good selection in t..."
+    },
+    {
+      "review_id": "TW4DXj74C82qhGjOgnmjyQ",
+      "predicted": 0.29906975624424414,
+      "actual": 0.54,
+      "rating": 4,
+      "text_preview": "Great place for a drink, nice friendly staff.  Didn't eat there though and would..."
+    },
+    {
+      "review_id": "VXY_XATUtIdtfDRi2ErqQA",
+      "predicted": -0.9393790503782488,
+      "actual": -0.93,
+      "rating": 1,
+      "text_preview": "Highly, highly overrated.  The food was a C minus at best.  And the service was ..."
+    },
+    {
+      "review_id": "40thYphUgIfvJq17QCfTwA",
+      "predicted": 0.9240210864723069,
+      "actual": 0.85,
+      "rating": 5,
+      "text_preview": "Great staff always helps and always nice. Always clean and huge store size. Stay..."
+    },
+    {
+      "review_id": "B094VG2GKR",
+      "predicted": 0.8852464509219427,
+      "actual": 0.89,
+      "rating": 5,
+      "text_preview": "Very pleased with iron. It makes great curls and can also straighten hair when y..."
+    },
+    {
+      "review_id": "CNVtV-TdQPytntwZqmViRg",
+      "predicted": 0.4550415282240584,
+      "actual": 0.11,
+      "rating": 3,
+      "text_preview": "Delicious food, sub-par service. I stopped into this dessert bar today to grab s..."
+    },
+    {
+      "review_id": "B0882TZR45",
+      "predicted": -0.8852464509219427,
+      "actual": -0.52,
+      "rating": 2,
+      "text_preview": "Don't waste your money,I  have power cord issues all the time and it continously..."
+    },
+    {
+      "review_id": "IuIdDm2PFuyLgj5DIexTTQ",
+      "predicted": -0.8852464509219427,
+      "actual": -0.89,
+      "rating": 1,
+      "text_preview": "Why don't we have a Target?  I thought K-Mart was going out of business.  Well n..."
+    },
+    {
+      "review_id": "VJlQHciG-ygKNX2zjOgz6A",
+      "predicted": 0.9393790503782488,
+      "actual": 0.95,
+      "rating": 5,
+      "text_preview": "We recently used Pure Design for a large event in a nearby hotel. Pure staff met..."
+    },
+    {
+      "review_id": "2wKZZmCeM8mSbMGzdTfXrw",
+      "predicted": -0.8059274488676564,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "Quite possibly the perfect business model to fail if it wasn't for a sequestered..."
+    },
+    {
+      "review_id": "5M9fBQINWamyQPdJ7OQkeA",
+      "predicted": -0.6817316198804996,
+      "actual": -0.6,
+      "rating": 2,
+      "text_preview": "Meh is all I can say for TDS. The restaurant itself is just cold.... not literal..."
+    },
+    {
+      "review_id": "WcCEk3Q7bgIynzgq0dgTNA",
+      "predicted": 0.5029733718731741,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "Really good burger. I had the Bourbon Black and Bleu. It was cooked like I wante..."
+    },
+    {
+      "review_id": "L0E_Ld__jIATsQ1vA7ZGZw",
+      "predicted": 0.9240210864723069,
+      "actual": 0.48,
+      "rating": 4,
+      "text_preview": "Looks like there is a second Red Kings restaurant in Chinatown and it did not di..."
+    },
+    {
+      "review_id": "_5Y0qP-S1O_kHULx0YuuzQ",
+      "predicted": 0.8059274488676564,
+      "actual": 0.53,
+      "rating": 4,
+      "text_preview": "Came here for Sunday brunch and walked away with a very full belly and a good bu..."
+    },
+    {
+      "review_id": "QuvsC1vH00EgThlP1GFryQ",
+      "predicted": -0.6817316198804996,
+      "actual": -0.92,
+      "rating": 1,
+      "text_preview": "Ordered some food at 11:47pm after not eating all day due to airline issues. I w..."
+    },
+    {
+      "review_id": "L9asV6W4T75CD2lwZdQBaQ",
+      "predicted": 0.29906975624424414,
+      "actual": 0.19,
+      "rating": 3,
+      "text_preview": "Ice cream wasn't the best, and definitely not for the price. But it was there wh..."
+    },
+    {
+      "review_id": "TcCcHzc3L6Aboq3DteEfZA",
+      "predicted": -0.6817316198804996,
+      "actual": -0.87,
+      "rating": 1,
+      "text_preview": "If you want to pay for everything a la carte this is the place for you.  \nFood w..."
+    },
+    {
+      "review_id": "nTj6Dy7YHplPXI5oxcnByA",
+      "predicted": -0.8059274488676564,
+      "actual": -0.95,
+      "rating": 1,
+      "text_preview": "I had the carrot cake.... Very disappointed tasted like licorice and baking soda..."
+    },
+    {
+      "review_id": "9fjoqPob5LU3njUYhMiiAg",
+      "predicted": 0.8458970107524514,
+      "actual": 0.52,
+      "rating": 4,
+      "text_preview": "Great rolls and sake. We sat in the bamboo room, which definitely added to the e..."
+    },
+    {
+      "review_id": "lFOPUydz0xefJIm6f7ohlA",
+      "predicted": 0.9622606002309622,
+      "actual": 0.88,
+      "rating": 5,
+      "text_preview": "Absolutely amazing!!! My girlfriend and I went on a Wednesday night for Restaura..."
+    },
+    {
+      "review_id": "g7MfpJGKQUGowCvIcrB91A",
+      "predicted": 0.4053600464421103,
+      "actual": 0.54,
+      "rating": 4,
+      "text_preview": "A wee bit pricey for the portions they serve. I come to Beck's for their gator g..."
+    },
+    {
+      "review_id": "tGzobhc7MyMSej6gVdv3Pw",
+      "predicted": -0.9240210864723069,
+      "actual": -0.54,
+      "rating": 2,
+      "text_preview": "I had to write an order after coming here a couple of times because this place i..."
+    },
+    {
+      "review_id": "B074CQC2NG",
+      "predicted": -0.9240210864723069,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "This is a joke. They do not work. Do not waste time or money...."
+    },
+    {
+      "review_id": "gIUerFG2uz_nJo4lpqKgJA",
+      "predicted": 0.8458970107524514,
+      "actual": 0.93,
+      "rating": 5,
+      "text_preview": "In love with my haircut! Very reasonable prices as well. This is my second time ..."
+    },
+    {
+      "review_id": "sEXhRJm_x9LdPif8ynNv8g",
+      "predicted": 0.8852464509219427,
+      "actual": 0.6,
+      "rating": 4,
+      "text_preview": "I think this is better than the Philadelphia location. Nevertheless, Szechuan ho..."
+    },
+    {
+      "review_id": "7nm3cQS0XGRLtsLGwvuYfg",
+      "predicted": -0.1778279410038923,
+      "actual": -0.69,
+      "rating": 2,
+      "text_preview": "No dark beer in February???  Nice looking place and nice folks...  summer beer i..."
+    },
+    {
+      "review_id": "B0B7RBK4NJ",
+      "predicted": -0.8852464509219427,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "I read the description and thought this was something different than it was.  I ..."
+    },
+    {
+      "review_id": "lAjAKzVgkUHcq1aLHzDBDA",
+      "predicted": -0.8852464509219427,
+      "actual": -0.47,
+      "rating": 2,
+      "text_preview": "I can walk here and won't go back even if they were the only place open at 2am. ..."
+    },
+    {
+      "review_id": "B01M6Y49AD",
+      "predicted": 0.8852464509219427,
+      "actual": 0.92,
+      "rating": 5,
+      "text_preview": "I actually like the way this one sprays better than CT.  Lasts just as long, tot..."
+    },
+    {
+      "review_id": "vgoYrPU52k17Kw3tiaLlFQ",
+      "predicted": 0.8458970107524514,
+      "actual": 0.84,
+      "rating": 5,
+      "text_preview": "This hotel has wonderful views of the airport, and it has the only revolving roo..."
+    },
+    {
+      "review_id": "EJifnXbRTzttq605pWGqyA",
+      "predicted": 0.5029733718731741,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "The Sunrise Family Restaurant is an old style diner that has a very small-town, ..."
+    },
+    {
+      "review_id": "XZl9M7HrwqqQUEOUu4azkA",
+      "predicted": 0.9240210864723069,
+      "actual": 0.91,
+      "rating": 5,
+      "text_preview": "I am a huge fan of Gennaro's. It's got a thin crust, sweet and rich tomato sauce..."
+    },
+    {
+      "review_id": "cWIVbtHF-b73rxjcaUB0cA",
+      "predicted": 0.7652855797503654,
+      "actual": 0.46,
+      "rating": 4,
+      "text_preview": "I had takeout because it was about 45 min prior to closing . I ordered the putta..."
+    },
+    {
+      "review_id": "B019O277A0",
+      "predicted": 0.8458970107524514,
+      "actual": 0.86,
+      "rating": 5,
+      "text_preview": "As a curly girl, I'm very familiar with using hair oils. This one is an organic ..."
+    },
+    {
+      "review_id": "RgonT2qGpUte6RFpoSSxuQ",
+      "predicted": 0.7239107359608682,
+      "actual": -0.01,
+      "rating": 3,
+      "text_preview": "They reopened up derived new management.. this was our 3rd time there. They have..."
+    },
+    {
+      "review_id": "IWflChcWypgf2Vlsm1WT5A",
+      "predicted": 0.9622606002309622,
+      "actual": 0.89,
+      "rating": 5,
+      "text_preview": "My husband took me here for our Anniversary and it was such a delight! Hats off ..."
+    },
+    {
+      "review_id": "Lo2giVeSNDvatEAGZRikWQ",
+      "predicted": 0.9240210864723069,
+      "actual": 0.92,
+      "rating": 5,
+      "text_preview": "Was taken here today by a Colombian friend who needed to satisfy a craving for s..."
+    },
+    {
+      "review_id": "yRJkUOmrNhpOOn0-FgnqCQ",
+      "predicted": -0.8059274488676564,
+      "actual": -0.94,
+      "rating": 1,
+      "text_preview": "Cashier was trying to put a beer on my to go order and I did not get the fish ta..."
+    },
+    {
+      "review_id": "B00OTJ2W18",
+      "predicted": 0.29906975624424414,
+      "actual": 0.59,
+      "rating": 4,
+      "text_preview": "The pattern was excellent. The elastic used to make cap stay on the head should ..."
+    },
+    {
+      "review_id": "Vb_BsacvTvDXEZiWVE6Thg",
+      "predicted": 0.8458970107524514,
+      "actual": 0.86,
+      "rating": 5,
+      "text_preview": "Love this place.   Best kept secret in Creve Couer.   9 hole course - affordable..."
+    },
+    {
+      "review_id": "S4nZgOgiv9w8MOiaWTpwBQ",
+      "predicted": 0.9622606002309622,
+      "actual": 0.8,
+      "rating": 5,
+      "text_preview": "I first heard about this place on the plane ride over from a Franklin local.  He..."
+    },
+    {
+      "review_id": "B07DSQ3NWM",
+      "predicted": 0.8852464509219427,
+      "actual": 0.91,
+      "rating": 5,
+      "text_preview": "Not greasy or filmy!<br />Love the look and feel of this lightweight moisturizer..."
+    },
+    {
+      "review_id": "B08PPB3W6H",
+      "predicted": -0.6817316198804996,
+      "actual": -0.52,
+      "rating": 2,
+      "text_preview": "There are six (6) velvet headbands with buttons in this set.\u00a0Each headband is na..."
+    },
+    {
+      "review_id": "JdKl3gf7xLkxwn2uUrMmgg",
+      "predicted": 0.6817316198804996,
+      "actual": 0.07,
+      "rating": 3,
+      "text_preview": "Love the food. Big portions, interesting and ever changing menue. The only issue..."
+    },
+    {
+      "review_id": "B01I066QWG",
+      "predicted": -0.8458970107524514,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "This mitt is so large that you really have to use a lot of pressure when rubbing..."
+    },
+    {
+      "review_id": "amIMShQBXjITXiYG6gyiaA",
+      "predicted": -0.9240210864723069,
+      "actual": -0.82,
+      "rating": 1,
+      "text_preview": "What a disappointment. This place was not good I would suggest you think twice b..."
+    },
+    {
+      "review_id": "B01CVQALFE",
+      "predicted": 0.6817316198804996,
+      "actual": 0.56,
+      "rating": 4,
+      "text_preview": "Smells nice, works great, price is just right..."
+    },
+    {
+      "review_id": "kgIF5n-s1RhQVzQNrQ5n8Q",
+      "predicted": -0.9240210864723069,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "This is the worst. My first time at an Econo anything. Playing nice for group pu..."
+    },
+    {
+      "review_id": "_h6NvONt5vGBrEMqEZQcnQ",
+      "predicted": 0.8852464509219427,
+      "actual": 0.54,
+      "rating": 4,
+      "text_preview": "We're new to the area, so we're exploring restaurants every weekend. My wife has..."
+    },
+    {
+      "review_id": "OsFuXoyrQwmIwj6Yz7QK8w",
+      "predicted": -0.8458970107524514,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "Rude and unprofessional staff. I called today to find out if they had availabili..."
+    },
+    {
+      "review_id": "MLn2jcDUSnJTOAxwhdxNfQ",
+      "predicted": -0.6386633830041155,
+      "actual": -0.58,
+      "rating": 2,
+      "text_preview": "I have been told by numerous native philadelphians that Ralph's is one of the be..."
+    },
+    {
+      "review_id": "B07PDL9GRS",
+      "predicted": -0.3535533905932738,
+      "actual": -0.51,
+      "rating": 2,
+      "text_preview": "Keep in mind this is a thin piece. But all I wanted was something to transition ..."
+    },
+    {
+      "review_id": "B082FLP15V",
+      "predicted": 0.5029733718731741,
+      "actual": 0.07,
+      "rating": 3,
+      "text_preview": "I purchased the tool for my 80 year old mom because she like to file her own toe..."
+    },
+    {
+      "review_id": "2zN9R1C5RTZ9oxuQ1uhP6Q",
+      "predicted": -0.8458970107524514,
+      "actual": -0.83,
+      "rating": 1,
+      "text_preview": "They have the WORST service advisors! Used to be good before Kelly and her team ..."
+    },
+    {
+      "review_id": "H0kinq7P7e0gdJPGJmVRbw",
+      "predicted": 0.3535533905932738,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "Here for convention and Imo's was suggested as \"The Best\" St. Louis Style pizza ..."
+    },
+    {
+      "review_id": "03VAtRmQlPQZK-jIiKkQiA",
+      "predicted": -0.6817316198804996,
+      "actual": -0.6,
+      "rating": 2,
+      "text_preview": "When this place first opened we went. We loved the Greek salad and gyros. It was..."
+    },
+    {
+      "review_id": "mSggForidMf0eUaK-Qnnvg",
+      "predicted": 0.8059274488676564,
+      "actual": 0.55,
+      "rating": 4,
+      "text_preview": "Oh Chickie's and Pete's, you are the perfect place to watch some sports and indu..."
+    },
+    {
+      "review_id": "rnyCUpFeNzS7J0ojgbDKdA",
+      "predicted": 0.8458970107524514,
+      "actual": 0.51,
+      "rating": 4,
+      "text_preview": "On my first day in New Orleans, I walked to Fair Grinds for a caffeine boost. It..."
+    },
+    {
+      "review_id": "B07KKBCG87",
+      "predicted": -0.8458970107524514,
+      "actual": -0.97,
+      "rating": 1,
+      "text_preview": "Terrible quality. Did not even last 18hours...."
+    },
+    {
+      "review_id": "u211-bNGLOwYeI8kAi2ddg",
+      "predicted": -0.9240210864723069,
+      "actual": -0.89,
+      "rating": 1,
+      "text_preview": "This place sucks! The one up on oracle and wetmore is where I usually go, howeve..."
+    },
+    {
+      "review_id": "TgDp1TErom3UNglKhDy2uw",
+      "predicted": 0.9622606002309622,
+      "actual": 0.89,
+      "rating": 5,
+      "text_preview": "A truly delightful find! This is the transformed Carrow's Restaurant on Plumb an..."
+    },
+    {
+      "review_id": "3423FVLE0d0kqhDpnIdC9w",
+      "predicted": 0.5029733718731741,
+      "actual": 0.16,
+      "rating": 3,
+      "text_preview": "Nice view from outside tables. It has typical beach food and typical beach servi..."
+    },
+    {
+      "review_id": "ZKvDG2sBvHVdF5oBNUOpAQ",
+      "predicted": -0.8059274488676564,
+      "actual": 0.09,
+      "rating": 3,
+      "text_preview": "This easter instead of going to Lopez Lake we went to Los Padres National Forest..."
+    },
+    {
+      "review_id": "b1GkT5ojVlMCM6jdwPi3wQ",
+      "predicted": 0.9622606002309622,
+      "actual": 0.87,
+      "rating": 5,
+      "text_preview": "Best smoothies in the whole world. And fresh bread is amazing. Very knowledgeabl..."
+    },
+    {
+      "review_id": "pouCNK0hBhJc2WY0joqkbQ",
+      "predicted": 0.8059274488676564,
+      "actual": 0.5,
+      "rating": 4,
+      "text_preview": "Great rich food,  but a lil bit pricey.  Everything tastes wonderful but nothing..."
+    },
+    {
+      "review_id": "RRZ8vFQWPvMS0zj6Imu1sw",
+      "predicted": -0.8458970107524514,
+      "actual": -0.46,
+      "rating": 2,
+      "text_preview": "The event started at 1 and we got there about 1:30. It was so packed you could n..."
+    },
+    {
+      "review_id": "JaGqBpLhxvC27juhu0lGwA",
+      "predicted": 0.9240210864723069,
+      "actual": 0.88,
+      "rating": 5,
+      "text_preview": "I loved this place.  Walking by, I almost didn't go in, because Im a vegetarian ..."
+    },
+    {
+      "review_id": "Q7sc8JXBOfA0gqKObNWsnA",
+      "predicted": -0.8458970107524514,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "Quality of this store has gone downhill over the past few years. In the past,  I..."
+    },
+    {
+      "review_id": "mRnYZes0nj4sr8DsE_gWMQ",
+      "predicted": 0.1778279410038923,
+      "actual": 0.11,
+      "rating": 3,
+      "text_preview": "I've come from Cali where boba is very common there. However I was thinking this..."
+    },
+    {
+      "review_id": "B07731H8YF",
+      "predicted": -0.549426225222706,
+      "actual": -0.56,
+      "rating": 2,
+      "text_preview": "It's a little... weird... It's the only word I can think of to describe it. It w..."
+    },
+    {
+      "review_id": "RcsyeHfZqpGdb9z-AkUdSA",
+      "predicted": 0.0,
+      "actual": 0.0,
+      "rating": 3,
+      "text_preview": "Lots and lots of mostly fried seafood. Surprisingly expensive for a working clas..."
+    },
+    {
+      "review_id": "9iSPQRg-oE525tze73mx4w",
+      "predicted": -0.9240210864723069,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "Ordered an iced mocha  and an iced white chocolate mocha and they were both was ..."
+    },
+    {
+      "review_id": "2DTSLWrxArBe6iNGTJhRZQ",
+      "predicted": 0.549426225222706,
+      "actual": 0.02,
+      "rating": 3,
+      "text_preview": "Went for a bachelorette party on a Saturday night in April. Definitely try to ar..."
+    },
+    {
+      "review_id": "dFgGps6gQQbWoKOR60X72w",
+      "predicted": 0.9393790503782488,
+      "actual": 0.93,
+      "rating": 5,
+      "text_preview": "My friend and I visited Tampa for a concert, and about ten minutes away from the..."
+    },
+    {
+      "review_id": "uk1e_MedV0PgVcOx5FBjww",
+      "predicted": 0.8059274488676564,
+      "actual": 0.95,
+      "rating": 5,
+      "text_preview": "Two co-workers and I came here after flying in from Chicago for an afternoon sna..."
+    },
+    {
+      "review_id": "B089LN7X8Y",
+      "predicted": 0.5029733718731741,
+      "actual": 0.86,
+      "rating": 5,
+      "text_preview": "A little bigger then the last pair I bought from Amazon and just as sharp, pleas..."
+    },
+    {
+      "review_id": "w5aB9esyhoCh0cNnltqv_w",
+      "predicted": -0.8458970107524514,
+      "actual": -0.86,
+      "rating": 1,
+      "text_preview": "I have been going to this nail salon for years off and on. I came here back when..."
+    },
+    {
+      "review_id": "B078BC3XDT",
+      "predicted": -0.9240210864723069,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "Noisy, can't really heat the water, barely keeps it warm. But the absolute worst..."
+    },
+    {
+      "review_id": "sSBY44pzZT3xcn2bXWyt1A",
+      "predicted": -0.5029733718731741,
+      "actual": -0.54,
+      "rating": 2,
+      "text_preview": "Reading the reviews, I cannot agree with the others which tout the quality of th..."
+    },
+    {
+      "review_id": "B08FRQGYDF",
+      "predicted": 0.8852464509219427,
+      "actual": 1.0,
+      "rating": 5,
+      "text_preview": "I have tried several different brands of face wipes. These have to be some of th..."
+    },
+    {
+      "review_id": "ALLPi_rgZtix1GPkk8Jcgw",
+      "predicted": -0.5029733718731741,
+      "actual": -0.62,
+      "rating": 2,
+      "text_preview": "It's been a few years since I've been here. I was impressed that they had little..."
+    },
+    {
+      "review_id": "kh0eGdjfaWdSgMcTUyjihQ",
+      "predicted": 0.3535533905932738,
+      "actual": -0.54,
+      "rating": 2,
+      "text_preview": "Had great reviews. Tried someone new..my husbands cut looks great. My sons cut d..."
+    },
+    {
+      "review_id": "xhhmoxmvIJp16ozmxBuZZg",
+      "predicted": -0.5029733718731741,
+      "actual": -0.57,
+      "rating": 2,
+      "text_preview": "We arrived for lunch at 12p on a Friday - wasn't busy at all. It took FOREVER to..."
+    },
+    {
+      "review_id": "Blzra0ClBO8mORAnUCk5Xg",
+      "predicted": -0.9622606002309622,
+      "actual": -0.89,
+      "rating": 1,
+      "text_preview": "ZERO STARS!! This place is dirty and disorganized.  There were yellowed OLD news..."
+    },
+    {
+      "review_id": "S95TlBLAqBqRBjgHQIYYpw",
+      "predicted": 0.6817316198804996,
+      "actual": 0.97,
+      "rating": 5,
+      "text_preview": "This place was nice, clean, and bright. It's your typical serve-yourself fro yo ..."
+    },
+    {
+      "review_id": "VSUoe2zIkrYYZySztDA_Lg",
+      "predicted": 0.9240210864723069,
+      "actual": 0.54,
+      "rating": 4,
+      "text_preview": "I think this Nordstrom's shoe department is better than other locations.  There ..."
+    },
+    {
+      "review_id": "INSGnYhsLHPc7v0VjuNxzw",
+      "predicted": -0.8852464509219427,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "im going to have to give this place one star for its horrible customer service:\n..."
+    },
+    {
+      "review_id": "iKnhnbJddNr00KdFGIRofg",
+      "predicted": -0.6817316198804996,
+      "actual": 0.12,
+      "rating": 3,
+      "text_preview": "Still running on EST, we arrived @8:30 on a Saturday to find no wait to be seate..."
+    },
+    {
+      "review_id": "B00UVN1H6C",
+      "predicted": -0.8458970107524514,
+      "actual": -0.83,
+      "rating": 1,
+      "text_preview": "It was not at all what I thought was advertised! I was expecting a tinted lotion..."
+    },
+    {
+      "review_id": "B07K8VTT6M",
+      "predicted": -0.6817316198804996,
+      "actual": -0.6,
+      "rating": 2,
+      "text_preview": "I think I need to stick with my 5 blade razor. This razor is not only difficult ..."
+    },
+    {
+      "review_id": "JqFt66fEtRl8l1kmMC61_A",
+      "predicted": -0.9240210864723069,
+      "actual": -0.95,
+      "rating": 1,
+      "text_preview": "Absolute garbage company. Trying to get from Indy to Chicago and they are more t..."
+    },
+    {
+      "review_id": "B09WSVFSGJ",
+      "predicted": -0.9622606002309622,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "Don\u2019t get it!  My hair is falling out!  PLEASE google and research these product..."
+    },
+    {
+      "review_id": "B07H6YGKVJ",
+      "predicted": 0.9622606002309622,
+      "actual": 0.9,
+      "rating": 5,
+      "text_preview": "Didn\u2019t expect much but got a nice beautiful surprise! These are nothing short of..."
+    },
+    {
+      "review_id": "6QT1guUN1loMKUYBoV0RrA",
+      "predicted": 0.2410285256833955,
+      "actual": 0.11,
+      "rating": 3,
+      "text_preview": "It's no different than any other Chinese place. Same menu, etc. this place does ..."
+    },
+    {
+      "review_id": "B087ZQK2G8",
+      "predicted": 0.1778279410038923,
+      "actual": 0.61,
+      "rating": 4,
+      "text_preview": "Decent shampoo. I used it alone without conditioner so I could see how it worked..."
+    },
+    {
+      "review_id": "_Y1tXKfLmIINKh5hiGhtQA",
+      "predicted": -0.5029733718731741,
+      "actual": -0.48,
+      "rating": 2,
+      "text_preview": "The food was good, service was horrible. I ordered orange juice for my kids and ..."
+    },
+    {
+      "review_id": "TunQqLbhPJDpncASCgkxmA",
+      "predicted": -0.5029733718731741,
+      "actual": -0.6,
+      "rating": 2,
+      "text_preview": "I first found out about this adorable little salon here on yelp while looking fo..."
+    },
+    {
+      "review_id": "pOKq1_Aa2un9K-aOoRe6uA",
+      "predicted": -0.8458970107524514,
+      "actual": -0.62,
+      "rating": 2,
+      "text_preview": "Went in for full set, request long showed picture. Nails were cut short no big d..."
+    },
+    {
+      "review_id": "12WmsX0EwwDlQyGXAgtkww",
+      "predicted": -0.9240210864723069,
+      "actual": -0.55,
+      "rating": 2,
+      "text_preview": "This is the McDonalds closest to my home, but I will forever drive any distance ..."
+    },
+    {
+      "review_id": "1aNrSU9CHuFnBuNFTD2cBQ",
+      "predicted": 0.8852464509219427,
+      "actual": 0.58,
+      "rating": 4,
+      "text_preview": "Brother Rabbit you are young, hip, and tasty!\n\nMet friends for drinks and an ear..."
+    },
+    {
+      "review_id": "B07ZYBR6YC",
+      "predicted": -0.6817316198804996,
+      "actual": -0.54,
+      "rating": 2,
+      "text_preview": "I don\u2019t see any result from using this. And they shouldn\u2019t sell it for money as ..."
+    },
+    {
+      "review_id": "2EjmDJnE2z5_lAWyV1rd4g",
+      "predicted": 0.9622606002309622,
+      "actual": 0.93,
+      "rating": 5,
+      "text_preview": "I cannot even believe someone gave this place one star. Here's the scoop. They h..."
+    },
+    {
+      "review_id": "EoN2xyKvTTn9B-z1grhYxw",
+      "predicted": 0.6817316198804996,
+      "actual": 0.53,
+      "rating": 4,
+      "text_preview": "I love the Brewpub for their variety of dishes.  Nachos, pizza and sandwiches.  ..."
+    },
+    {
+      "review_id": "ep8FfviAfqHNyhpW6MQ2jA",
+      "predicted": -0.8458970107524514,
+      "actual": -0.4,
+      "rating": 2,
+      "text_preview": "Hipsters unite!  I've never had a good time at The Taint, despite several people..."
+    },
+    {
+      "review_id": "B00R8LI7ZO",
+      "predicted": -0.6817316198804996,
+      "actual": -0.83,
+      "rating": 1,
+      "text_preview": "it's missing bristles and it's splintered on the back! i found one at target for..."
+    },
+    {
+      "review_id": "gMhwE86Ef-mkYMtUxrDtlg",
+      "predicted": 0.8059274488676564,
+      "actual": 0.93,
+      "rating": 5,
+      "text_preview": "I am not an indian food type of person but this place lives up to the hype. When..."
+    },
+    {
+      "review_id": "B0875V791H",
+      "predicted": 0.4550415282240584,
+      "actual": 0.58,
+      "rating": 4,
+      "text_preview": "my hair is long.  It took a long time to get these put in.  The curls were great..."
+    },
+    {
+      "review_id": "fFX81fVi2KpnlR7CN7ht_A",
+      "predicted": 0.8059274488676564,
+      "actual": 0.57,
+      "rating": 4,
+      "text_preview": "My boyfriend and I both decided to try Jesse's for the first time after we'd bot..."
+    },
+    {
+      "review_id": "Mvrz4XjLAyQYxSqtZ_j-ig",
+      "predicted": 0.9240210864723069,
+      "actual": 0.78,
+      "rating": 5,
+      "text_preview": "Super delish!! No frills! Just great sea food, sour dough bread was great! And I..."
+    },
+    {
+      "review_id": "wNwmhzPerLLWzsAovkFKGQ",
+      "predicted": -0.6386633830041155,
+      "actual": -0.53,
+      "rating": 2,
+      "text_preview": "My husband reserved a Corolla-sized car over the internet ten days ahead of time..."
+    },
+    {
+      "review_id": "pQI_GEr0fOd3cq48-7-f5w",
+      "predicted": 0.3535533905932738,
+      "actual": 0.03,
+      "rating": 3,
+      "text_preview": "The beef noodles was a bit too salty and the fried rice was a bit oily. But over..."
+    },
+    {
+      "review_id": "_NAJ4K52B44-pXfrg3EylA",
+      "predicted": 0.9240210864723069,
+      "actual": 0.9,
+      "rating": 5,
+      "text_preview": "Another great annual festival Edmonton has to offer.\n\nThe Fringe is over two wee..."
+    },
+    {
+      "review_id": "NiuxBtn6Om9wOwZtjmT4Hg",
+      "predicted": 0.8852464509219427,
+      "actual": 0.51,
+      "rating": 4,
+      "text_preview": "Despite being a spin-off at the burgers from Rouge, I actually think that the bu..."
+    },
+    {
+      "review_id": "xIxA5HwBDFR1nkGhtKriWg",
+      "predicted": -0.8458970107524514,
+      "actual": -0.5,
+      "rating": 2,
+      "text_preview": "I've dined here several times but the last two occasions we received poor servic..."
+    },
+    {
+      "review_id": "B08879N2W3",
+      "predicted": 0.4053600464421103,
+      "actual": -0.49,
+      "rating": 2,
+      "text_preview": "but it isn't certified organic, so is it? I have Aloe plants, but when traveling..."
+    },
+    {
+      "review_id": "B08N6YHQXT",
+      "predicted": 0.8852464509219427,
+      "actual": 0.85,
+      "rating": 5,
+      "text_preview": "Great quality soap! So many good ingredients that are good for skin and hydratin..."
+    },
+    {
+      "review_id": "MWUGmzyXVIlG2NwvzX0q4Q",
+      "predicted": 0.9393790503782488,
+      "actual": 0.82,
+      "rating": 5,
+      "text_preview": "What an AMAZING occurrence that we ended up here after another barbecue place ra..."
+    },
+    {
+      "review_id": "xgiQAlpYkBDjd7Bn_UhIXg",
+      "predicted": 0.9240210864723069,
+      "actual": 0.48,
+      "rating": 4,
+      "text_preview": "My husband and I held our wedding reception at Hendel's Cafe and it was gorgeous..."
+    },
+    {
+      "review_id": "Q8hKGUqd-lNtLDc-d2vMjQ",
+      "predicted": -0.549426225222706,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "For many years, RH&B was the place to go in south Jersey for great BBQ and blues..."
+    },
+    {
+      "review_id": "B082MTTFZD",
+      "predicted": 0.2410285256833955,
+      "actual": 0.57,
+      "rating": 4,
+      "text_preview": "As I have gotten older (I'm in my early fifties), I've noticed that my eyelashes..."
+    },
+    {
+      "review_id": "ndy1YoqgJ6BXsqPvFs9mkg",
+      "predicted": -0.5029733718731741,
+      "actual": -0.05,
+      "rating": 3,
+      "text_preview": "Overpriced for what you get. I think this is a cute spot to meet up with a frien..."
+    },
+    {
+      "review_id": "B09NKFQL53",
+      "predicted": -0.8458970107524514,
+      "actual": -0.48,
+      "rating": 2,
+      "text_preview": "I have very thick hair and when these arrived I attempted to use it to finish a ..."
+    },
+    {
+      "review_id": "B0784SJFC1",
+      "predicted": 0.8852464509219427,
+      "actual": 0.87,
+      "rating": 5,
+      "text_preview": "I really like these. I love that I got 2. I put one in our camper for camping tr..."
+    },
+    {
+      "review_id": "rGI8UdsEGiGeETFiu1VK1w",
+      "predicted": 0.5029733718731741,
+      "actual": 0.03,
+      "rating": 3,
+      "text_preview": "Good choice in Union Station St. Louis.  I had the Ponchartrain (server said it ..."
+    },
+    {
+      "review_id": "AxV2FvPdM3lUFU4y2K_P3w",
+      "predicted": 0.8852464509219427,
+      "actual": 0.97,
+      "rating": 5,
+      "text_preview": "Its a great place for Brunch.\nWe tried the Wildflower Triple where you can subst..."
+    },
+    {
+      "review_id": "4oVBzRVdXH3XMGiTutkcdQ",
+      "predicted": 0.8059274488676564,
+      "actual": 0.58,
+      "rating": 4,
+      "text_preview": "This place is a little harder to find but worth the hunt. B's Diner is a little ..."
+    },
+    {
+      "review_id": "B009SNONTO",
+      "predicted": 0.9622606002309622,
+      "actual": 0.84,
+      "rating": 5,
+      "text_preview": "This is the best thing ever!!!!! I have pain 24/7 and this is awesome!!! I rub t..."
+    },
+    {
+      "review_id": "B07PRDZ2BH",
+      "predicted": 0.7652855797503654,
+      "actual": 0.5,
+      "rating": 4,
+      "text_preview": "I am in my early fifties. I found a multi-step skincare routine a few years ago ..."
+    },
+    {
+      "review_id": "B07DSC4X3K",
+      "predicted": 0.4550415282240584,
+      "actual": 0.57,
+      "rating": 4,
+      "text_preview": "I wish I could wear these colors but most of them are too deeply hued for my fai..."
+    },
+    {
+      "review_id": "HyD8P-CcFU3FR75T0dJAhA",
+      "predicted": 0.8059274488676564,
+      "actual": 0.55,
+      "rating": 4,
+      "text_preview": "The restaurant was very nicely decorated , and clean. There were six of us and e..."
+    },
+    {
+      "review_id": "qMVwOQNDqYzwodlFJ81GNw",
+      "predicted": 0.8458970107524514,
+      "actual": 0.48,
+      "rating": 4,
+      "text_preview": "Great location, great food, and friendly staff! There are only a few seats and t..."
+    },
+    {
+      "review_id": "B07RVN4X51",
+      "predicted": 0.5029733718731741,
+      "actual": 0.57,
+      "rating": 4,
+      "text_preview": "Damn thing works. I have a very curly beard and it reallybstraightens it out. I ..."
+    },
+    {
+      "review_id": "u7NNL4ur-IzQ6j8DlUnW9w",
+      "predicted": 0.5029733718731741,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "Great breakfast fare and all. Eggs proven\u00e7ale was pretty good; all kinds of herb..."
+    },
+    {
+      "review_id": "iCOrhmplq14AOWlnznRyhA",
+      "predicted": 0.6386633830041155,
+      "actual": 0.05,
+      "rating": 3,
+      "text_preview": "We ordered the rib dinner, pork on a bun, Mac n cheese, baked beans, and cole sl..."
+    },
+    {
+      "review_id": "B08GFLMGN2",
+      "predicted": -0.549426225222706,
+      "actual": -0.58,
+      "rating": 2,
+      "text_preview": "At the current price of $48, this is insanely expensive. Yes the brush is a beau..."
+    },
+    {
+      "review_id": "B08WPXVK2P",
+      "predicted": 0.29906975624424414,
+      "actual": 0.61,
+      "rating": 4,
+      "text_preview": "The flip top cap has a tab on it that has to be pulled before dispensing this. T..."
+    },
+    {
+      "review_id": "SFy1mkQaiYFrWqoeBXHr-A",
+      "predicted": 0.9240210864723069,
+      "actual": 0.85,
+      "rating": 5,
+      "text_preview": "I love coming here to do my smog on my cars great service and chipper then most!..."
+    },
+    {
+      "review_id": "HcYulXMN_jgausdUXNhBSA",
+      "predicted": 0.5029733718731741,
+      "actual": 1.0,
+      "rating": 5,
+      "text_preview": "After hearing about this place from a fellow Yelp Elite, my SO and I decided to ..."
+    },
+    {
+      "review_id": "bHlCjNrM_yBg7CKj1QLn8g",
+      "predicted": -0.7239107359608682,
+      "actual": -0.91,
+      "rating": 1,
+      "text_preview": "Chicken was salty, I ordered 1/2 chicken, rice and plantains to go for lunch. Wi..."
+    },
+    {
+      "review_id": "B07D6KYSJH",
+      "predicted": 0.7652855797503654,
+      "actual": 0.54,
+      "rating": 4,
+      "text_preview": "Surprisingly, I really like this mask. I already tried their\u00a0[[ASIN:B07VQY9ZP2\u00a0W..."
+    },
+    {
+      "review_id": "TP0HYy4GqYtrWMlFIhxw3A",
+      "predicted": -0.8458970107524514,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "We arrived a few minutes early for a 7pm reservation. When we asked for our tabl..."
+    },
+    {
+      "review_id": "8mdUFkIoMxInUUOz_Z_jiw",
+      "predicted": 0.9622606002309622,
+      "actual": 0.88,
+      "rating": 5,
+      "text_preview": "Always awesome!  Best crust ever and super Fresh ingredients and nice staff.  Lo..."
+    },
+    {
+      "review_id": "eR2WN8v6l52W0jJ3NJIv-Q",
+      "predicted": 0.9622606002309622,
+      "actual": 0.52,
+      "rating": 4,
+      "text_preview": "Had a great dinner at Spasso. My parents always request Oana and she is an aweso..."
+    },
+    {
+      "review_id": "B00BNARG9O",
+      "predicted": -0.7239107359608682,
+      "actual": -0.88,
+      "rating": 1,
+      "text_preview": "20 minutes of fragrance nothing more. $30 plus dollars for this!! I wanted Donna..."
+    },
+    {
+      "review_id": "B007IAE5WY",
+      "predicted": -0.5029733718731741,
+      "actual": 0.09,
+      "rating": 3,
+      "text_preview": "Whats all the hype about? Its no different than any other exfoliator i've tried...."
+    },
+    {
+      "review_id": "QS3gJVX4WAfk0Chd4W3zIw",
+      "predicted": 0.9240210864723069,
+      "actual": 0.94,
+      "rating": 5,
+      "text_preview": "We belong to lifetime in another state and were visitingvisiting from Colorado t..."
+    },
+    {
+      "review_id": "zyWcynpTTkXaM3bfyALlBg",
+      "predicted": -0.8852464509219427,
+      "actual": -0.5,
+      "rating": 2,
+      "text_preview": "Ew. I don't know what upsets me more, the borderline gross food or how much I ha..."
+    },
+    {
+      "review_id": "F7mWedmSAH9l5U6vmVq1IA",
+      "predicted": 0.6386633830041155,
+      "actual": 0.08,
+      "rating": 3,
+      "text_preview": "This is the biggest and best location for HMV in the city. The prices aren't any..."
+    },
+    {
+      "review_id": "srw8FcuizFYyHRWnLsYVOQ",
+      "predicted": 0.29906975624424414,
+      "actual": 0.18,
+      "rating": 3,
+      "text_preview": "Have only been once a couple of months ago, so maybe this was a one-off experien..."
+    },
+    {
+      "review_id": "bjBfJVb8Ikpz2Lbx-S-gyg",
+      "predicted": 0.8059274488676564,
+      "actual": 0.85,
+      "rating": 5,
+      "text_preview": "Pleasantly surprised to find Taiwanese restaurant in Reno. Convenient to all of ..."
+    },
+    {
+      "review_id": "-M6y-yFPKVouD2NNOKcT_w",
+      "predicted": 0.6817316198804996,
+      "actual": 0.49,
+      "rating": 4,
+      "text_preview": "Very good breakfast. Within walking distance of our hotel. Had the crepes with f..."
+    },
+    {
+      "review_id": "B07PNNCSP9",
+      "predicted": 0.8852464509219427,
+      "actual": 0.81,
+      "rating": 5,
+      "text_preview": "Smells good, feels great!..."
+    },
+    {
+      "review_id": "2sS7PKfT06YeX-KJkgC-gQ",
+      "predicted": -0.4053600464421103,
+      "actual": -0.49,
+      "rating": 2,
+      "text_preview": "Went to ocharleys on a Sunday afternoon, it wasn't too busy but I guess our serv..."
+    },
+    {
+      "review_id": "MA5iblOZ4FWIQ_B3UBKKMA",
+      "predicted": 0.8852464509219427,
+      "actual": 0.47,
+      "rating": 4,
+      "text_preview": "Second visit even better than the first!!  Loved the butternut squash and goat c..."
+    },
+    {
+      "review_id": "qeSxL-POvGLZD6aQ5O9kvw",
+      "predicted": -0.9085775551536168,
+      "actual": -0.9,
+      "rating": 1,
+      "text_preview": "--------DINNER REVIEW----------\n\nI rarely write reviews, but this honestly was o..."
+    },
+    {
+      "review_id": "PPgbLBvi34A6m7bKJfTwhw",
+      "predicted": -0.9622606002309622,
+      "actual": -0.77,
+      "rating": 1,
+      "text_preview": "Service and management terrible... After messing up all 4 of our orders the wait..."
+    },
+    {
+      "review_id": "BUZbFa_TeoThHW1hwCRfmQ",
+      "predicted": 0.8852464509219427,
+      "actual": 0.92,
+      "rating": 5,
+      "text_preview": "I've been going here now for a couple of months. I have never received more comp..."
+    },
+    {
+      "review_id": "8lCR3OuzF17HIB_b72LCQA",
+      "predicted": 0.5029733718731741,
+      "actual": -0.0,
+      "rating": 3,
+      "text_preview": "This place has a great location for the hungry tourist. It manages to be edgy ye..."
+    },
+    {
+      "review_id": "B08DHTJ25J",
+      "predicted": -0.6386633830041155,
+      "actual": 0.01,
+      "rating": 3,
+      "text_preview": "I was very disappointed when I got this facial scrub. I had assumed it was like ..."
+    },
+    {
+      "review_id": "NqLiYY3UYyMJMMf8HL6zdw",
+      "predicted": 0.8458970107524514,
+      "actual": 0.89,
+      "rating": 5,
+      "text_preview": "awesome place.  good food. nice people.  rotating specials.  all home made.  wha..."
+    },
+    {
+      "review_id": "GBs3qi3tur47NYG09MNYCQ",
+      "predicted": 0.5029733718731741,
+      "actual": 0.51,
+      "rating": 4,
+      "text_preview": "I am sort of a simple man, so I had never been to a liquor bar before. I have be..."
+    },
+    {
+      "review_id": "5QU0DFF-8YZuWv98EFqnQg",
+      "predicted": -0.549426225222706,
+      "actual": -0.47,
+      "rating": 2,
+      "text_preview": "I really wanted to like this place and heard about it during lent when I had giv..."
+    },
+    {
+      "review_id": "M2uQZs0rnlUijHSmGx4zHA",
+      "predicted": 0.8458970107524514,
+      "actual": 0.49,
+      "rating": 4,
+      "text_preview": "Came in after attending the Zurich Classic golf tournament. It was a warm and a ..."
+    },
+    {
+      "review_id": "QS_m_ymnK6WT-LMnnkF-jA",
+      "predicted": 0.7652855797503654,
+      "actual": 0.49,
+      "rating": 4,
+      "text_preview": "Tasty selection and very preppy! \n\nOne cannot go wrong with the What's Up Doc om..."
+    },
+    {
+      "review_id": "iFRIf-_U8cIW0rC5tMBmMA",
+      "predicted": -0.5029733718731741,
+      "actual": -0.86,
+      "rating": 1,
+      "text_preview": "They call a chicken salad sandwich two cubes of chicken with mayo in it and a sa..."
+    },
+    {
+      "review_id": "BYWRwOtiLsmABTG2yIHUMg",
+      "predicted": 0.9240210864723069,
+      "actual": 0.92,
+      "rating": 5,
+      "text_preview": "These guys are awesome! Best burger restaurant in New Orleans. Service was on po..."
+    },
+    {
+      "review_id": "juzhoSPzFupje-RYJ4VPpQ",
+      "predicted": -0.4550415282240584,
+      "actual": 0.13,
+      "rating": 3,
+      "text_preview": "In short, the food was decently good, but completely overpriced.  The guacamole ..."
+    },
+    {
+      "review_id": "E-yGr1OhsUBxNeUVLDVouA",
+      "predicted": -0.8458970107524514,
+      "actual": -0.92,
+      "rating": 1,
+      "text_preview": "I know I shouldn't expect much but everything I asked for that was on the drive ..."
+    },
+    {
+      "review_id": "B07PFJNVSY",
+      "predicted": -0.6386633830041155,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "These caps are very small. Even though my hair length is short, the cap barely c..."
+    },
+    {
+      "review_id": "Ift8d2s1BZrZnzYGfJjhEA",
+      "predicted": -0.6386633830041155,
+      "actual": -0.42,
+      "rating": 2,
+      "text_preview": "I have been here twice for breakfast.  The set-up is really awkward and it's cle..."
+    },
+    {
+      "review_id": "J96EFyLE15P-VH5kCyxGWA",
+      "predicted": -0.8458970107524514,
+      "actual": -0.55,
+      "rating": 2,
+      "text_preview": "After going there several times going to Fresh I am sad to report my last visit ..."
+    },
+    {
+      "review_id": "oK3iGCJKbVx1rNYyMf4k1w",
+      "predicted": 0.1778279410038923,
+      "actual": -0.52,
+      "rating": 2,
+      "text_preview": "The service was good and the staff was polite, but the food was bland and lacked..."
+    },
+    {
+      "review_id": "B087BQ7MS8",
+      "predicted": -0.6817316198804996,
+      "actual": -0.5,
+      "rating": 2,
+      "text_preview": "I don\u2019t like the texture of it and it has this shimmering things in it which is ..."
+    },
+    {
+      "review_id": "PvZvLfodXgbqqZT2q65HwA",
+      "predicted": -0.5029733718731741,
+      "actual": 0.1,
+      "rating": 3,
+      "text_preview": "Went here when they first opened. They only had one flavor... it wasn't that gre..."
+    },
+    {
+      "review_id": "RC8D-iY19aZFHXUHaS8xLg",
+      "predicted": -0.9240210864723069,
+      "actual": -0.85,
+      "rating": 1,
+      "text_preview": "I got the gyro \"platter\" for lunch, which was dry, uninspired, and nothing like ..."
+    },
+    {
+      "review_id": "yRhMvNtddCoox0Hs9k6heA",
+      "predicted": 0.4053600464421103,
+      "actual": 0.06,
+      "rating": 3,
+      "text_preview": "Late one Saturday night, some friends and I made the mistake of trying to get dr..."
+    },
+    {
+      "review_id": "RdeS7gqrmVs5kJtazzVr3A",
+      "predicted": 0.9240210864723069,
+      "actual": 0.94,
+      "rating": 5,
+      "text_preview": "This small little donut bakery is located in one of Hermitage's oldest shopping ..."
+    },
+    {
+      "review_id": "5-jOuGmG3pR-tV4t-Z_ZEA",
+      "predicted": -0.29906975624424414,
+      "actual": 0.2,
+      "rating": 3,
+      "text_preview": "Overrated. This place is ok, often the crust is burned...maybe our pallets aren'..."
+    },
+    {
+      "review_id": "zM7u3iffMjniyvQAaN9Tnw",
+      "predicted": -0.8458970107524514,
+      "actual": -0.89,
+      "rating": 1,
+      "text_preview": "So disappointing on so many levels. Have been coming here for years - and the qu..."
+    },
+    {
+      "review_id": "SN76tP0QfNEUZA5Y0tpXww",
+      "predicted": -0.5946035575013605,
+      "actual": -0.55,
+      "rating": 2,
+      "text_preview": "Had the Mexican Roll and Philadelphia Roll for take-out. Very disappointed with ..."
+    },
+    {
+      "review_id": "JFjQ5RntPGhsNO2agAEYtg",
+      "predicted": 0.9622606002309622,
+      "actual": 0.86,
+      "rating": 5,
+      "text_preview": "Best casino in Reno.   4 deck and 2 deck blackjack, real drink glasses (no plast..."
+    },
+    {
+      "review_id": "B07KG1TWP5",
+      "predicted": -0.8059274488676564,
+      "actual": -0.62,
+      "rating": 2,
+      "text_preview": "Everyone knows the saying \"Don't put anything in your ear smaller than your elbo..."
+    },
+    {
+      "review_id": "jF3ZlgxpM88UjKymEfSJmQ",
+      "predicted": -0.8059274488676564,
+      "actual": -0.58,
+      "rating": 2,
+      "text_preview": "This was my very 1st time in New Orleans. It's been an amazing experience and so..."
+    },
+    {
+      "review_id": "CeFvt53nQdZzjCYkLiagnQ",
+      "predicted": 0.9622606002309622,
+      "actual": 0.91,
+      "rating": 5,
+      "text_preview": "So I hear whispers of a reemergence of brunch I truly believe this is the best b..."
+    },
+    {
+      "review_id": "5zWhnq05f3r6ntTqHUF5LA",
+      "predicted": 0.6817316198804996,
+      "actual": 0.52,
+      "rating": 4,
+      "text_preview": "4-5 stars, this is just after one visit so far, worth a try if you're a thai fan..."
+    },
+    {
+      "review_id": "ty0pMlOT8EwJTQSu0KQX9g",
+      "predicted": 0.9085775551536168,
+      "actual": 0.58,
+      "rating": 4,
+      "text_preview": "I really, really, really like so much about this hotel. For starters, it's BEAUT..."
+    },
+    {
+      "review_id": "FEcORupb9Fep465-KFUKcw",
+      "predicted": 0.29906975624424414,
+      "actual": 0.13,
+      "rating": 3,
+      "text_preview": "Love the tap room, but I can't seem to get the hours of business right.  My firs..."
+    },
+    {
+      "review_id": "B01MXLP1T1",
+      "predicted": 0.1778279410038923,
+      "actual": 0.9,
+      "rating": 5,
+      "text_preview": "Doesn't burn the eyes..."
+    },
+    {
+      "review_id": "B0792Q3T59",
+      "predicted": 0.9393790503782488,
+      "actual": 0.91,
+      "rating": 5,
+      "text_preview": "I have been using this mascara for about 2 months now and I am in awe at the dif..."
+    },
+    {
+      "review_id": "m5eTxp5zID8FcuDeev2K8A",
+      "predicted": 0.8059274488676564,
+      "actual": 0.21,
+      "rating": 3,
+      "text_preview": "This used to be Red's but they knocked of the \"R\" and re-launched as Ed's, altho..."
+    },
+    {
+      "review_id": "OZLKicbO1W51nW6pIU5ZyQ",
+      "predicted": -0.29906975624424414,
+      "actual": 0.14,
+      "rating": 3,
+      "text_preview": "To sum it up, it's an average bar with ties to a very well-known TV show - but t..."
+    },
+    {
+      "review_id": "B09P144WHW",
+      "predicted": -0.7239107359608682,
+      "actual": -0.51,
+      "rating": 2,
+      "text_preview": "I used this on my three long-haired cats and it picked up some hair. Since the s..."
+    },
+    {
+      "review_id": "PfJ1Gw_maaswto4D_qDxtQ",
+      "predicted": 0.8458970107524514,
+      "actual": 0.88,
+      "rating": 5,
+      "text_preview": "Nigel's an awesome guy and the candy is amazing it's worth the drive!\n\nCan't bel..."
+    },
+    {
+      "review_id": "8JFGBuHMoiNDyfcxuWNtrA",
+      "predicted": 0.5946035575013605,
+      "actual": 0.61,
+      "rating": 4,
+      "text_preview": "Good food--loved the gnocchi with marinara\nthe baked eggplant appetizer was very..."
+    },
+    {
+      "review_id": "fD6OZa4gKbYQ3KXBL05B6Q",
+      "predicted": 0.3535533905932738,
+      "actual": 0.04,
+      "rating": 3,
+      "text_preview": "Tina I believe was our waitress.. I'm not sure if I want to give 3 or 4 stars. I..."
+    },
+    {
+      "review_id": "bed0N65L9E1GyiNsI7BOqg",
+      "predicted": 0.7652855797503654,
+      "actual": 0.85,
+      "rating": 5,
+      "text_preview": "Had the brisket sandwich with two sides and a drink for 9.99 - Great barbecue at..."
+    }
+  ]
+}

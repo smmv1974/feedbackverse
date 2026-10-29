@@ -1,0 +1,156 @@
+# FREE Cloud Model Configuration for 70-80% Accuracy Target
+# Uses FREE cloud APIs instead of expensive Ollama Cloud
+#
+# SETUP (Choose ONE):
+#
+# Option 1: Google Gemini (RECOMMENDED - 100% FREE)
+# 1. Get API key: https://makersuite.google.com/app/apikey
+# 2. Set: set GOOGLE_API_KEY=your-key-here
+# 3. Install: pip install google-generativeai
+#
+# Option 2: Groq (FREE, very fast)
+# 1. Get API key: https://console.groq.com/
+# 2. Set: set GROQ_API_KEY=your-key-here
+# 3. Install: pip install groq
+#
+# Option 3: OpenAI (Paid but cheap: ~$0.01 for 100 reviews)
+# 1. Get API key: https://platform.openai.com/api-keys
+# 2. Set: set OPENAI_API_KEY=your-key-here
+# 3. Install: pip install openai
+
+llm:
+  # Server configuration (for local fallback)
+  server:
+    base_url: "http://127.0.0.1:11434"
+    timeout: 180
+
+  # Cloud model settings
+  cloud:
+    enabled: true  # Set to true to use cloud models
+
+    # Primary: Google Gemini 2.5 Flash (FREE, excellent quality)
+    primary:
+      provider: "google"
+      model: "gemini-2.5-flash"  # Very capable, 100% free
+      api_key_env: "GOOGLE_API_KEY"
+      timeout: 90
+      max_retries: 3
+
+    # Fallback 1: Groq (FREE, blazing fast)
+    fallback_1:
+      provider: "groq"
+      model: "meta-llama/llama-4-scout-17b-16e-instruct"  # 17B parameters, Meta Llama 4
+      api_key_env: "GROQ_API_KEY"
+      timeout: 60
+      max_retries: 3
+
+    # Fallback 2: OpenAI GPT-4o-mini (Paid but very cheap)
+    fallback_2:
+      provider: "openai"
+      model: "gpt-4o-mini"  # $0.15 per 1M tokens
+      api_key_env: "OPENAI_API_KEY"
+      timeout: 90
+      max_retries: 3
+
+    # Final fallback: Local Ollama (if all cloud fails)
+    local_fallback:
+      enabled: true
+      model: "qwen2.5:3b-instruct"
+
+  # Model assignment
+  models:
+    summarization:
+      name: "cloud"  # Use cloud primary
+      fallback: "qwen2.5:3b-instruct"
+
+    sentiment:
+      name: "cloud"  # Most important - use best cloud model
+      fallback: "qwen2.5:3b-instruct"
+
+    themes:
+      name: "cloud"
+      fallback: "qwen2.5:3b-instruct"
+
+    alt_small:
+      name: "cloud"
+      fallback: "qwen2.5:3b-instruct"
+
+  # Generation parameters (optimized for sentiment)
+  generation:
+    temperature: 0.1  # Low for consistency
+    top_p: 0.95
+    repeat_penalty: 1.1
+    tokens:
+      summary_max: 500
+      themes_max: 350
+
+# Pipeline configuration
+# Optimized for 200-300 reviews with Google Gemini free tier
+# Token estimate: 200-300 reviews × 1,250 tokens/review = 250k-375k tokens
+# Well within 1M tokens/day limit
+pipeline:
+  batch_size: 3  # 3 reviews per batch = ~67-100 batches for 200-300 reviews
+  max_retries: 3
+  delay_between_batches: 2  # 2 seconds = safe for 15 RPM limit (Google Gemini)
+  delay_between_requests: 0.5  # 0.5s between requests within batch
+
+  # Save progress (helpful for long runs)
+  save_intermediate: true
+  checkpoint_frequency: 20  # Save every 20 batches (~60 reviews)
+
+# Data configuration
+data:
+  collection_window:
+    start: "2024-09-10"
+    end: "2024-11-01"
+
+  # Use real validation data from Phase 1
+  validation:
+    file: "data/validation/references_aligned.csv"
+    sample_size: 300  # User requested 200-300 reviews per run
+
+# Grounding
+grounding:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  thresholds:
+    flag: 0.50
+    strong: 0.70
+
+# Evaluation
+evaluation:
+  sentiment_bin_edges: [-1.0, -0.6, -0.2, 0.2, 0.6, 1.0]
+  electricity_cost_per_kwh: 0.12
+  delta_sentiment_flag: 0.30
+
+  # Target metrics (70-80% agreement goal)
+  targets:
+    cohen_kappa_min: 0.70
+    pearson_r_min: 0.75
+    mae_max: 0.35
+    polarity_flips_max: 2
+
+# Logging
+logging:
+  level: "INFO"
+  pipeline_log: "logs/pipeline_cloud.log"
+  console_output: true
+
+# Output
+output:
+  results_dir: "data/results"
+  metrics_file: "data/results/validation_metrics_cloud.json"
+  detailed_file: "data/results/detailed_cloud.csv"
+
+# Cloud-specific settings
+cloud:
+  # Rate limiting (Google Gemini free tier)
+  requests_per_minute: 15
+  max_concurrent_requests: 1
+
+  # Error handling
+  retry_on_rate_limit: true
+  fallback_to_local_on_error: true
+
+  # Cost tracking (even free APIs may have quotas)
+  track_usage: true
+  log_api_calls: true

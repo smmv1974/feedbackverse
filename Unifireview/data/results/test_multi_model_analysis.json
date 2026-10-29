@@ -1,0 +1,59 @@
+{
+  "summary": "SUMMARY: Customer reviews for the Mixed Products (iPhone) reveal a divided opinion, with many praising the camera quality and design, while expressing concerns over battery life and value for money. Some users reported poor customer service and product defects, while others highlighted seamless performance and premium build quality. Overall, satisfaction varies significantly based on individual experiences.\n\nPOSITIVES: Stunning camera quality with professional-looking photos, sleek and premium design with solid build quality, excellent customer service experience for some users.\n\nNEGATIVES: Poor battery life with fast drainage and overheating issues, high price point not matching incremental improvements, unhelpful or delayed customer service responses.\n\nOverall customer consensus indicates strong performance in photography and design, but concerns about battery efficiency, pricing, and inconsistent customer support experiences.",
+  "sentiment": {
+    "sentiment_score": -0.25,
+    "confidence": "medium",
+    "justification": "The review highlights strong praise for camera and design but emphasizes notable drawbacks in battery life, price, and inconsistent support, resulting in a slightly negative overall tone."
+  },
+  "themes": [
+    {
+      "theme": "Camera Quality",
+      "description": "Praise for photo/video excellence, night mode, versatility",
+      "sentiment": "positive",
+      "frequency_pct": 55
+    },
+    {
+      "theme": "Battery Life",
+      "description": "Complaints about short duration, overheating, drain speed",
+      "sentiment": "negative",
+      "frequency_pct": 50
+    },
+    {
+      "theme": "Price vs Value",
+      "description": "High cost relative to perceived incremental upgrades",
+      "sentiment": "negative",
+      "frequency_pct": 45
+    },
+    {
+      "theme": "Build/Design",
+      "description": "Premium feel, sleek look, solid construction",
+      "sentiment": "positive",
+      "frequency_pct": 40
+    },
+    {
+      "theme": "Customer Service",
+      "description": "Helpful support vs dismissive or slow responses",
+      "sentiment": "mixed",
+      "frequency_pct": 35
+    },
+    {
+      "theme": "Performance/Heat",
+      "description": "Device warming during gaming or video calls",
+      "sentiment": "negative",
+      "frequency_pct": 25
+    },
+    {
+      "theme": "Ecosystem/Upgrade Worth",
+      "description": "Seamless Apple integration vs incremental yearly changes",
+      "sentiment": "mixed",
+      "frequency_pct": 20
+    }
+  ],
+  "processing_time": 24.175095319747925,
+  "models_used": {
+    "summarization": "qwen3-coder:480b-cloud",
+    "sentiment": "gpt-oss:120b-cloud",
+    "themes": "kimi-k2:1t-cloud"
+  },
+  "review_count": 10
+}
